@@ -1,0 +1,148 @@
+#top-image {
+background:url('https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/0/8/8905/red-rocks-park-o.jpg') -25px -50px;
+position:fixed ;
+top:0;
+width:100%;
+z-index:0;
+height:100%;
+background-size: calc(100% + 50px);
+}
+
+body{
+	background:#370edb;
+}
+
+#title {
+background:transparent;
+position:absolute;
+top:0%;
+bottom: 0%;
+margin-top: 50px;
+margin-left: 50px;
+text-align: center;
+width:100%;
+z-index:0;
+height:100%;
+}
+
+
+.titletext{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+font-family: 'Patua One', cursive;
+font-weight: 600;
+font-size: 120px;
+color: #370edb;
+text-shadow: 0px 0px 20px #370edb;
+text-transform: uppercase;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+#title2 {
+background:transparent;
+position:absolute;
+top:0%;
+bottom: 0%;
+margin-top: 50px;
+margin-left: 50px;
+text-align: center;
+width:100%;
+z-index:0;
+height:100%;
+}
+
+.titletext2{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+font-family: 'Patua One', cursive;
+font-size: 120px;
+color: #f76be7;
+font-weight: 600;
+text-transform: uppercase;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@media only screen and (max-width: 600px) {
+	
+.titletext2{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+font-family: 'Patua One', cursive;
+font-size: 100px;
+color: #f76be7;
+font-weight: 600;
+text-transform: uppercase;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+	
+.titletext{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+font-family: 'Patua One', cursive;
+font-weight: 600;
+font-size: 100px;
+color: #370edb;
+text-shadow: 0px 0px 20px #370edb;
+text-transform: uppercase;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+	
+#title {
+background:transparent;
+position:absolute;
+top:0%;
+bottom: 0%;
+margin-top: 0px;
+margin-left: 0px;
+text-align: center;
+width:100%;
+z-index:0;
+height:100%;
+}
+	
+#title2 {
+background:transparent;
+position:absolute;
+top:0%;
+bottom: 0%;
+margin-top: 0px;
+margin-left: 0px;
+text-align: center;
+width:100%;
+z-index:0;
+height:100%;
+}
+}
