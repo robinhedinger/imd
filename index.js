@@ -103,7 +103,7 @@ var height = movementStrength / $(window).height();
 var width = movementStrength / $(window).width();
 var height2 = movementStrength2 / $(window).height();
 var width2 = movementStrength2 / $(window).width();
-$("#title").mousemove(function(e){
+$("#landingpage").mousemove(function(e){
           var pageX = e.pageX - ($(window).width() / 2);
           var pageY = e.pageY - ($(window).height() / 2);
           var pageX2 = e.pageX - ($(window).width() / 2);
@@ -173,7 +173,7 @@ function changecolor1(){
 function changecolor(){
 	$(".titletext2")
 	    .css( "color", secondary );
-	$("body")
+	$("#landingpage")
 			 .css( "background", primary )
 			 .css( "transition", "0.2s");
 	$(".titletext")
@@ -191,7 +191,7 @@ function changecolor2(){
 function changecolor(){
 	$(".titletext2")
 	    .css( "color", secondary );
-	$("body")
+	$("#landingpage")
 			 .css( "background", primary )
 			 .css( "transition", "0.2s");
 	$(".titletext")
@@ -209,7 +209,7 @@ function changecolor3(){
 function changecolor(){
 	$(".titletext2")
 	    .css( "color", secondary );
-	$("body")
+	$("#landingpage")
 			 .css( "background", primary )
 			 .css( "transition", "0.2s");
 	$(".titletext")
