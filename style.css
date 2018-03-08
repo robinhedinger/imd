@@ -9,7 +9,18 @@ background-size: calc(100% + 50px);
 }
 
 body{
-	background:#370edb;
+background:#001e66;
+}
+
+#font-field{
+	position: fixed;
+	z-index: 100;
+}
+
+#font{
+	position: fixed;
+	z-index: 100;
+	top:30px;
 }
 
 #title {
@@ -34,8 +45,8 @@ transform: translateX(-50%) translateY(-50%);
 font-family: 'Patua One', cursive;
 font-weight: 600;
 font-size: 120px;
-color: #370edb;
-text-shadow: 0px 0px 20px #370edb;
+color: #001e66;
+text-shadow: 0px 0px 20px #001e66;
 text-transform: uppercase;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -67,7 +78,7 @@ left: 50%;
 transform: translateX(-50%) translateY(-50%);
 font-family: 'Patua One', cursive;
 font-size: 120px;
-color: #f76be7;
+color: #4af2d6;
 font-weight: 600;
 text-transform: uppercase;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -79,8 +90,90 @@ text-transform: uppercase;
                                   supported by Chrome and Opera */
 }
 
+.customize-icon{
+	width: 30px;
+	margin: 20px;
+}
+.customize{
+	background: #00153f;
+	width: 100%;
+	position: absolute;
+	top: -80%;
+	transition: 0.3s;
+	z-index: 100;
+}
+.customize-extended{
+	width: 100%;
+	top: 0%;
+	transition: 0.3s;
+}
+
+.box{
+	width: 100%;
+	height: 150px;
+	position: relative;
+	margin: 200px 0px;
+	overflow: hidden;
+}
+
+.innerbox{
+	width: 100%;
+	position:relative;
+}
+
+.selecter{
+	width: 0px;
+	height: 0px;
+	background: transparent;
+  border: 20px solid transparent;
+	border-top: solid 20px #00153f;
+	position: absolute;
+	left: 50%;
+	top: 200px;
+	transform: translateX(-50%);
+	z-index: 100;
+}
+.color1{
+width: 33.33%;
+height: 130px;
+background: pink;
+float: left;
+transition: 0.5s;
+}
+
+.color1:hover,.color2:hover,.color3:hover{
+cursor: pointer;
+}
+
+.color2{
+width: 33.33%;
+height: 130px;
+background: #001e66;
+float: left;
+transition: 0.5s;
+}
+.color3{
+width: 33.33%;
+height: 130px;
+background: #f9ea93;
+float: left;
+transition: 0.5s;
+}
+
+.color-active{
+width: 80%;
+}
+
+.color-crumped{
+	width: 10%;
+}
+#header{
+	z-index: 100;
+	position: absolute;
+}
+
 @media only screen and (max-width: 600px) {
-	
+
 .titletext2{
 position: absolute;
 top: 50%;
@@ -88,7 +181,6 @@ left: 50%;
 transform: translateX(-50%) translateY(-50%);
 font-family: 'Patua One', cursive;
 font-size: 100px;
-color: #f76be7;
 font-weight: 600;
 text-transform: uppercase;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -99,7 +191,7 @@ text-transform: uppercase;
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-	
+
 .titletext{
 position: absolute;
 top: 50%;
@@ -108,8 +200,7 @@ transform: translateX(-50%) translateY(-50%);
 font-family: 'Patua One', cursive;
 font-weight: 600;
 font-size: 100px;
-color: #370edb;
-text-shadow: 0px 0px 20px #370edb;
+text-shadow: 0px 0px 20px #001e66;
 text-transform: uppercase;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -119,7 +210,7 @@ text-transform: uppercase;
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-	
+
 #title {
 background:transparent;
 position:absolute;
@@ -132,7 +223,7 @@ width:100%;
 z-index:0;
 height:100%;
 }
-	
+
 #title2 {
 background:transparent;
 position:absolute;

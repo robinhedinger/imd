@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Unbenanntes Dokument</title>
+</head>
+
+<body>
+	<p>hey</p>
+	<p id="demoX"></p>
+	<p id="demoY"></p>
+	<script>
+	window.addEventListener("deviceorientation", handleOrientation, true);
+function handleOrientation(event) {
+    // those angles are in degrees
+    var alpha = event.alpha;  
+    var beta = event.beta;
+    var gamma = event.gamma;
+
+    // JS math works in radians
+    var betaR = beta / 180 * Math.PI;
+    var gammaR = gamma / 180 * Math.PI;
+    var spinR = Math.atan2(Math.cos(betaR) * Math.sin(gammaR), Math.sin(betaR));
+	
+	// convert to usefull output
+	var alphaF = alpha;
+	
+    // convert back to degrees
+    var spin = spinR * 180 / Math.PI;
+	console.log(spin);
+    document.getElementById("demoX").innerHTML = Math.round(alphaF);
+    document.getElementById("demoY").innerHTML = Math.round(beta);
+}
+	</script>
+</body>
+</html>

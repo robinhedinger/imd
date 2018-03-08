@@ -3,22 +3,44 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
   <meta charset="UTF-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="index.js"></script>
+  <script src="debugging.js"></script>
   <title>moving background-image on mousemove</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div id="title2">
-		<h1 id="titletext2" class="titletext2">HELLO</h1>
-	</div>
-	<div id="title">
-		<p id="titletext" class="titletext">HELLO</p>
-	</div>
-</body>
+  <section class="customize" id="customize">
+    <div class="selecter"></div>
+      <div class="box">
+            <div class="innerbox" id="innerbox">
+                <div id="color1" class="color1" onclick="color1()">
+                </div>
+                <div id="color2" class="color2" onclick="color2()">
+                </div>
+                <div id="color3" class="color3" onclick="color3()">
+                </div>
+            </div>
+      </div>
 
+
+  </section>
+  <section class="header" id="header">
+    <img id="customize-icon" class="customize-icon" src="customize.svg" onClick="customize()">
+  </section>
+  <section class="landignpage" id="landignpage">
+		<div id="title2">
+			<h1 id="titletext2" class="titletext2">HELLO</h1>
+		</div>
+		<div id="title">
+			<p id="titletext" class="titletext">HELLO</p>
+		</div>
+  </section>
+
+</body>
 </html>
