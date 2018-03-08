@@ -105,13 +105,16 @@ text-transform: uppercase;
 	background: #00153f;
 	width: 100%;
 	position: absolute;
-	top: -80%;
+	top:-700px;
+	height: 500px;
 	transition: 0.3s;
 	z-index: 100;
 }
+
 .customize-extended{
 	width: 100%;
 	top: 0%;
+	height: 500px;
 	transition: 0.3s;
 }
 
