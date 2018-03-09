@@ -1,5 +1,5 @@
 ---
-infotext: "You can edit me by changing the text on the right."
+infotext: You can edit me by changing the text on the right. Heyy neuer text
 showtext: true
 ---
 
@@ -55,11 +55,11 @@ showtext: true
       <p>
         {{ page.infotext }}
       </p>
-      <br>
+      <br />
       {% endif %}
 
       <p class="editable">
-        You can edit me, by clicking on me. I'm way easier that the methode above.
+        You can edit me, by clicking on me. I'm way easier that the methode above. Hey neuer text
       </p>
     </div>
   </section>
@@ -70,7 +70,7 @@ showtext: true
   max-width:1100px;
   ">
     {% for work in site.work %}
-      <div class="fragment"style="
+      <div class="fragment" style="
         float: left;
         width: 300px;
         min-height: 280px;
@@ -91,9 +91,7 @@ showtext: true
         </h2>
         <img style="
           width: 100%;
-          "
-          src="{{ work.image_path }}" alt="{{ work.title }}"
-        >
+          " src="{{ work.image_path }}" alt="{{ work.title }}" />
         <div style="
         color: #001e66;
         padding: 15px 0 0 15px;
