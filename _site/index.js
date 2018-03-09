@@ -1,7 +1,6 @@
 		var things = [/*Koreanisch*/		/*'안녕하세요',/*For the Seraina*/
 					  /*Russisch*/			/*'Привет',
 					  /*Französisch*/		'Bonjour',
-						/*Vong*/					halo ,
 					  /*Hindi*/				/*'नमस्ते',
 					  /*Englisch*/			'Hello',
 					  /*Chinesisch*/		/*'你好',
