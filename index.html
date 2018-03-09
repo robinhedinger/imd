@@ -65,11 +65,40 @@ showtext: true
   </section>
 
 <section id="work" class="work">
-  <div class="wrapper">
+  <div class="wrapper" style="
+  margin:auto;
+  max-width:1000px;
+  ">
     {% for work in site.work %}
-      <div class="work">
-        <h2><img src="{{ work.image_path }}" alt="{{ work.title }}">{{ work.title }}</a></h2>
-        {{ work.content }}
+      <div class="fragment"style="
+        float: left;
+        width: 300px;
+        margin: 20px;
+        background: aliceblue;
+        padding: 10px;
+        border-radius: 5px;
+      ">
+        <h2 style="
+          position: absolute;
+          z-index: 20;
+          color: #001e66;
+          padding: 190px 0 0 20px;
+          font-family: 'Patua One', cursive;
+          font-size: 30px;
+          ">
+          {{ work.title }}
+        </h2>
+        <img style="
+          width: 100%;
+          "
+          src="{{ work.image_path }}" alt="{{ work.title }}"
+        >
+        <div style="
+        padding: 10px;
+        color: #001e66;
+        ">
+          {{ work.content }}
+        </div>
       </div>
     {% endfor %}
   </div>

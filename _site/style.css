@@ -192,6 +192,18 @@ width: 80%;
   margin: 0 auto;
 }
 
+.work .wrapper{
+	width: 100%;
+}
+.fragment{
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+.content{
+opacity: 0.5;
+}
+
 @media only screen and (max-width: 600px) {
 
 .titletext2{
