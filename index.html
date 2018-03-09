@@ -94,11 +94,8 @@ showtext: true
           "
           src="{{ work.image_path }}" alt="{{ work.title }}"
         >
-        <div style="
-        padding: 20px 15px;
-        color: #001e66;
-        ">
-          {{ work.description }}
+        <div style=" padding: 20px 15px; color: #001e66; ">
+          {{ work.content }}
         </div>
       </div>
     {% endfor %}
