@@ -1,11 +1,6 @@
 ---
-<<<<<<< HEAD
-infotext: Edited text 1.10
+infotext: "Edited text 1.10"
 showtext: true
-=======
-infotext: Random Text Not the stuff i wrote in the other text field lol.
-showtext: false
->>>>>>> 8915d784f2be7c424175c36268b873f72d0bbf42
 ---
 
 <!DOCTYPE html>
@@ -57,10 +52,13 @@ showtext: false
   <section id="begrüssung" class="begrüssung">
     <div>
       {% if page.showtext %}
+      <p>
+        {{ page.infotext }}
+      </p>
+      {% endif %}
       <p class="editable">
         Random Text asdkjhakjsfhkajsf
       </p>
-      {% endif %}
     </div>
   </section>
 
