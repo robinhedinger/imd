@@ -204,6 +204,11 @@ width: 80%;
 opacity: 0.5;
 }
 
+#fragment-text{
+	padding: 20px 15px !important;
+	color: #001e66;
+}
+
 @media only screen and (max-width: 600px) {
 
 .titletext2{
