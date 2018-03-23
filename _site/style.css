@@ -1,271 +1,329 @@
-#top-image {
-background:url('https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/0/8/8905/red-rocks-park-o.jpg') -25px -50px;
-position:fixed ;
-top:0;
-width:100%;
-z-index:0;
-height:100%;
-background-size: calc(100% + 50px);
-}
+/*Global*/
+	body{
+		font-family: "PT Sans";
+		line-height: 20px;
+		font-kerning: normal;
+	}
 
-body{
-font-family: "PT Sans";
-line-height: 20px;
-font-kerning: normal;
-}
+/* Landingpage */
+	#title {
+		background:transparent;
+		position:absolute;
+		top:0%;
+		bottom: 0%;
+		margin-top: 50px;
+		margin-left: 50px;
+		text-align: center;
+		width:100%;
+		z-index:0;
+		height:100%;
+	}
+	.landingpage{
+		background:#001e66;
+		height:100vh;
+		width: 100%;
+	}
+	.titletext{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		font-family: 'Patua One', cursive;
+		font-weight: 600;
+		font-size: 120px;
+		color: #001e66;
+		text-shadow: 0px 0px 20px #001e66;
+		text-transform: uppercase;
+	  -webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	  -khtml-user-select: none; /* Konqueror HTML */
+	  -moz-user-select: none; /* Firefox */
+	  -ms-user-select: none; /* Internet Explorer/Edge */
+	  user-select: none; /* Non-prefixed version, currently
+	                                  supported by Chrome and Opera */
+	}
+	#title2 {
+		background:transparent;
+		position:absolute;
+		top:0%;
+		bottom: 0%;
+		margin-top: 50px;
+		margin-left: 50px;
+		text-align: center;
+		width:100%;
+		z-index:0;
+		height:100%;
+	}
+	.titletext2{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		font-family: 'Patua One', cursive;
+		font-size: 120px;
+		color: #4af2d6;
+		font-weight: 600;
+		text-transform: uppercase;
+	  -webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	  -khtml-user-select: none; /* Konqueror HTML */
+	  -moz-user-select: none; /* Firefox */
+	  -ms-user-select: none; /* Internet Explorer/Edge */
+	  user-select: none; /* Non-prefixed version, currently
+	                                  supported by Chrome and Opera */
+	}
 
-#font-field{
-	position: fixed;
-	z-index: 100;
-}
+/* Header */
+	#header{
+		z-index: 100;
+		position: absolute;
+	}
+	.customize-icon{
+		width: 30px;
+		margin: 20px;
+	}
 
-#font{
-	position: fixed;
-	z-index: 100;
-	top:30px;
-}
+/* Customize */
+	.customize{
+		background: #00153f;
+		width: 100%;
+		position: absolute;
+		top:-700px;
+		height: 500px;
+		transition: 0.3s;
+		z-index: 100;
+	}
+	.customize-extended{
+		width: 100%;
+		top: 0%;
+		height: 500px;
+		transition: 0.3s;
+	}
+	.box{
+		width: 100%;
+		height: 150px;
+		position: relative;
+		margin: 200px 0px;
+		overflow: hidden;
+	}
+	.innerbox{
+		width: 100%;
+		position:relative;
+	}
+	.selecter{
+		width: 0px;
+		height: 0px;
+		background: transparent;
+	  border: 20px solid transparent;
+		border-top: solid 20px #00153f;
+		position: absolute;
+		left: 50%;
+		top: 200px;
+		transform: translateX(-50%);
+		z-index: 100;
+	}
+	.color1{
+		width: 33.33%;
+		height: 130px;
+		background: pink;
+		float: left;
+		transition: 0.5s;
+	}
+	.color1:hover,.color2:hover,.color3:hover{
+		cursor: pointer;
+	}
+	.color2{
+		width: 33.33%;
+		height: 130px;
+		background: #001e66;
+		float: left;
+		transition: 0.5s;
+	}
+	.color3{
+		width: 33.33%;
+		height: 130px;
+		background: #f9ea93;
+		float: left;
+		transition: 0.5s;
+	}
+	.color-active{
+		width: 80%;
+	}
+	.color-crumped{
+		width: 10%;
+	}
 
-#title {
-background:transparent;
-position:absolute;
-top:0%;
-bottom: 0%;
-margin-top: 50px;
-margin-left: 50px;
-text-align: center;
-width:100%;
-z-index:0;
-height:100%;
-}
+/* Begrüssung*/
+	.begrüssung{
+		background: #001e66;
+		/*padding:100px 30px;*/
+		height:50vh;
+	}
+	.begrüssung div{
+		max-width: 500px;
+	  margin: 0 auto;
+		background: white;
+		padding:40px 60px;
+	}
+	.begrüssung-textbox{
+		transition-property: transform;
+		transition: 0.1s;
+	}
 
-.landingpage{
-background:#001e66;
-height:100vh;
-width: 100%;
-}
+/* Kompetenzen */
+	.skills{
+		width: 100%;
+		height: 600px;
+	}
+	.skills div{
+		float: left;
+		width: 33.33333%;
+		height: 50%;
+		background: red;
+		overflow: hidden;
+		position: relative;
+	}
+	.skills div img{
+		width: 100%;
+		height: auto;
+		transition: 5s;
+		transform: translateX(-50%) translateY(-50%);
+		position: absolute;
+		left: 50%;
+		top:50%;
+	}
+	/*.skills div:hover img{
+		transform: scale(1.1);
+	}*/
+	.skills div p{
+		position: absolute;
+		z-index: 10;
+		top: 20px;
+		left: 20px;
+		color: #001e66;
+		font-family: 'Patua One', cursive;
+		font-size: 22px;
+	}
 
-.titletext{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translateX(-50%) translateY(-50%);
-font-family: 'Patua One', cursive;
-font-weight: 600;
-font-size: 120px;
-color: #001e66;
-text-shadow: 0px 0px 20px #001e66;
-text-transform: uppercase;
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-}
+/* Beschreibung */
+	.beschreibung{
+		height: 70vh;
+		position: relative;
+	}
+	.beschreibung div{
+		max-width: 500px;
+		position: absolute;
+		left: 50%;
+		top:50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+	.beschreibung h2{
+		font-family: 'Patua One', cursive;
+		font-weight: 600;
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
 
+/* Arbeiten */
+	.work{
+		height: 400px;
+	}
+	.work .wrapper .fragment{
+		width: 400px;
+		height: 300px;
+		margin:20px;
+	}
+	.work .wrapper .fragment .img-container{
+		overflow:hidden;
+		width: 400px;
+		height: 260px;
+		border-radius: 10px;
+	}
+	.work .wrapper .fragment .img-container img{
+		width: 100%;
+	}
+	.work .wrapper .fragment h2{
+		margin:15px;
+	}
+	.work .wrapper{
+		width: 100%;
+	}
+	.fragment{
+		float: left;
+		width: 100px;
+		height: 100px;
+	}
+	.content{
+		opacity: 0.5;
+	}
 
-#title2 {
-background:transparent;
-position:absolute;
-top:0%;
-bottom: 0%;
-margin-top: 50px;
-margin-left: 50px;
-text-align: center;
-width:100%;
-z-index:0;
-height:100%;
-}
+/* Footer*/
+	.footer{
+		height: 70vh;
+		background: #001e66;
+	}
 
-.titletext2{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translateX(-50%) translateY(-50%);
-font-family: 'Patua One', cursive;
-font-size: 120px;
-color: #4af2d6;
-font-weight: 600;
-text-transform: uppercase;
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-}
+/* Mobile */
+	@media only screen and (max-width: 600px) {
 
-.customize-icon{
-	width: 30px;
-	margin: 20px;
-}
-.customize{
-	background: #00153f;
-	width: 100%;
-	position: absolute;
-	top:-700px;
-	height: 500px;
-	transition: 0.3s;
-	z-index: 100;
-}
-
-.customize-extended{
-	width: 100%;
-	top: 0%;
-	height: 500px;
-	transition: 0.3s;
-}
-
-.box{
-	width: 100%;
-	height: 150px;
-	position: relative;
-	margin: 200px 0px;
-	overflow: hidden;
-}
-
-.innerbox{
-	width: 100%;
-	position:relative;
-}
-
-.selecter{
-	width: 0px;
-	height: 0px;
-	background: transparent;
-  border: 20px solid transparent;
-	border-top: solid 20px #00153f;
-	position: absolute;
-	left: 50%;
-	top: 200px;
-	transform: translateX(-50%);
-	z-index: 100;
-}
-.color1{
-width: 33.33%;
-height: 130px;
-background: pink;
-float: left;
-transition: 0.5s;
-}
-
-.color1:hover,.color2:hover,.color3:hover{
-cursor: pointer;
-}
-
-.color2{
-width: 33.33%;
-height: 130px;
-background: #001e66;
-float: left;
-transition: 0.5s;
-}
-.color3{
-width: 33.33%;
-height: 130px;
-background: #f9ea93;
-float: left;
-transition: 0.5s;
-}
-
-.color-active{
-width: 80%;
-}
-
-.color-crumped{
-	width: 10%;
-}
-#header{
-	z-index: 100;
-	position: absolute;
-}
-
-.begrüssung{
-	background: #dfeaf4;
-	padding:200px 30px;
-}
-
-.begrüssung div{
-	max-width: 500px;
-  margin: 0 auto;
-}
-
-.work .wrapper{
-	width: 100%;
-}
-.fragment{
-	float: left;
-	width: 100px;
-	height: 100px;
-}
-.content{
-opacity: 0.5;
-}
-
-@media only screen and (max-width: 600px) {
-
-.titletext2{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translateX(-50%) translateY(-50%);
-font-family: 'Patua One', cursive;
-font-size: 100px;
-font-weight: 600;
-text-transform: uppercase;
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-}
-
-.titletext{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translateX(-50%) translateY(-50%);
-font-family: 'Patua One', cursive;
-font-weight: 600;
-font-size: 100px;
-text-shadow: 0px 0px 20px #001e66;
-text-transform: uppercase;
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-}
-
-#title {
-background:transparent;
-position:absolute;
-top:0%;
-bottom: 0%;
-margin-top: 0px;
-margin-left: 0px;
-text-align: center;
-width:100%;
-z-index:0;
-height:100%;
-}
-
-#title2 {
-background:transparent;
-position:absolute;
-top:0%;
-bottom: 0%;
-margin-top: 0px;
-margin-left: 0px;
-text-align: center;
-width:100%;
-z-index:0;
-height:100%;
-}
-}
+		/* Landingpage */
+			.titletext2{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				font-family: 'Patua One', cursive;
+				font-size: 100px;
+				font-weight: 600;
+				text-transform: uppercase;
+			  -webkit-touch-callout: none; /* iOS Safari */
+			  -webkit-user-select: none; /* Safari */
+			  -khtml-user-select: none; /* Konqueror HTML */
+			  -moz-user-select: none; /* Firefox */
+			  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+			                                  supported by Chrome and Opera */
+			}
+			.titletext{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				font-family: 'Patua One', cursive;
+				font-weight: 600;
+				font-size: 100px;
+				text-shadow: 0px 0px 20px #001e66;
+				text-transform: uppercase;
+			  -webkit-touch-callout: none; /* iOS Safari */
+			  -webkit-user-select: none; /* Safari */
+			  -khtml-user-select: none; /* Konqueror HTML */
+			  -moz-user-select: none; /* Firefox */
+			  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+			                                  supported by Chrome and Opera */
+			}
+			#title {
+				background:transparent;
+				position:absolute;
+				top:0%;
+				bottom: 0%;
+				margin-top: 0px;
+				margin-left: 0px;
+				text-align: center;
+				width:100%;
+				z-index:0;
+				height:100%;
+			}
+			#title2 {
+				background:transparent;
+				position:absolute;
+				top:0%;
+				bottom: 0%;
+				margin-top: 0px;
+				margin-left: 0px;
+				text-align: center;
+				width:100%;
+				z-index:0;
+				height:100%;
+			}
+	}

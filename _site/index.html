@@ -7,12 +7,14 @@
   <meta charset="UTF-8" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="index.js"></script>
+  <script src="scroll.js"></script>
   <title>IMD Bekanntmachung</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
   <!--customize-->
   <section class="customize" id="customize">
     <div class="selecter"></div>
@@ -35,37 +37,113 @@
 
   <!--landingpage-->
   <section class="landingpage" id="landingpage">
-		<div id="title2">
-			<h1 id="titletext2" class="titletext2">Hello</h1>
-		</div>
-		<div id="title">
-			<p id="titletext" class="titletext">Hello</p>
-		</div>
+	   <div id="title2">
+			    <h1 id="titletext2" class="titletext2">Hello</h1>
+		  </div>
+		  <div id="title">
+			     <p id="titletext" class="titletext">Hello</p>
+		  </div>
   </section>
 
-  <!--begrüssung-->
+  <!-- begrüssung -->
   <section id="begrüssung" class="begrüssung">
-    <div>
-      
-      <p>
-        You can edit me by changing the text on the right.
-      </p>
-      <br>
-      
-
+    <div class="begrüssung-textbox">
       <p class="editable">
-        You can edit me, by clicking on me. I'm way easier that the methode above.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
       </p>
     </div>
   </section>
 
-<section id="work" class="work">
+  <!-- Kompetenzen -->
+  <section class="skills">
+    <!--Kompetenz 1-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+
+    <!--Kompetenz 2-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+
+    <!--Kompetenz 3-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+
+    <!--Kompetenz 4-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+
+    <!--Kompetenz 5-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+
+    <!--Kompetenz 6-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+  </section>
+
+  <!-- Beschreibung -->
+  <section class="beschreibung">
+    <div>
+      <h2>
+        Beschreibung
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+  </section>
+
+  <!-- Arbeiten-->
+  <section class="work">
+    <div class="wrapper">
+      
+        <div class="fragment">
+          <div class="img-container">
+            <img src="https://cdn.dribbble.com/users/1432826/screenshots/4284201/1-01.png" alt="Nico" />
+          </div>
+          <h2>
+            Nico
+          </h2>
+        </div>
+      
+        <div class="fragment">
+          <div class="img-container">
+            <img src="https://cdn.dribbble.com/users/1432826/screenshots/4303595/8-01.png" alt="Robin" />
+          </div>
+          <h2>
+            Robin
+          </h2>
+        </div>
+      
+        <div class="fragment">
+          <div class="img-container">
+            <img src="https://cdn.dribbble.com/users/1432826/screenshots/4315807/4-01.png" alt="Tara" />
+          </div>
+          <h2>
+            Tara
+          </h2>
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+  </section>
+
+<!--<section id="work" class="work">
   <div class="wrapper" style="
   margin:auto;
   max-width:1100px;
   ">
     
-      <div class="fragment"style="
+      <div class="fragment" style="
         float: left;
         width: 300px;
         min-height: 280px;
@@ -86,9 +164,7 @@
         </h2>
         <img style="
           width: 100%;
-          "
-          src="https://cdn.dribbble.com/users/1432826/screenshots/4284201/1-01.png" alt="Nico"
-        >
+          " src="https://cdn.dribbble.com/users/1432826/screenshots/4284201/1-01.png" alt="Nico" />
         <div style="
         color: #001e66;
         padding: 15px 0 0 15px;
@@ -98,7 +174,7 @@
         </div>
       </div>
     
-      <div class="fragment"style="
+      <div class="fragment" style="
         float: left;
         width: 300px;
         min-height: 280px;
@@ -119,9 +195,7 @@
         </h2>
         <img style="
           width: 100%;
-          "
-          src="https://cdn.dribbble.com/users/1432826/screenshots/4303595/8-01.png" alt="Robin"
-        >
+          " src="https://cdn.dribbble.com/users/1432826/screenshots/4303595/8-01.png" alt="Robin" />
         <div style="
         color: #001e66;
         padding: 15px 0 0 15px;
@@ -131,7 +205,7 @@
         </div>
       </div>
     
-      <div class="fragment"style="
+      <div class="fragment" style="
         float: left;
         width: 300px;
         min-height: 280px;
@@ -152,19 +226,17 @@
         </h2>
         <img style="
           width: 100%;
-          "
-          src="https://cdn.dribbble.com/users/1432826/screenshots/4315807/4-01.png" alt="Tara"
-        >
+          " src="https://cdn.dribbble.com/users/1432826/screenshots/4315807/4-01.png" alt="Tara" />
         <div style="
         color: #001e66;
         padding: 15px 0 0 15px;
          ">
-          <p>hehehehehe ;)</p>
+          <p>Hey das habe ich neues gemacht.</p>
 
         </div>
       </div>
     
   </div>
-</section>
+</section>-->
 </body>
 </html>

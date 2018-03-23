@@ -12,12 +12,14 @@ showtext: true
   <meta charset="UTF-8" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="index.js"></script>
+  <script src="scroll.js"></script>
   <title>IMD Bekanntmachung</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
   <!--customize-->
   <section class="customize" id="customize">
     <div class="selecter"></div>
@@ -40,31 +42,89 @@ showtext: true
 
   <!--landingpage-->
   <section class="landingpage" id="landingpage">
-		<div id="title2">
-			<h1 id="titletext2" class="titletext2">Hello</h1>
-		</div>
-		<div id="title">
-			<p id="titletext" class="titletext">Hello</p>
-		</div>
+	   <div id="title2">
+			    <h1 id="titletext2" class="titletext2">Hello</h1>
+		  </div>
+		  <div id="title">
+			     <p id="titletext" class="titletext">Hello</p>
+		  </div>
   </section>
 
-  <!--begrüssung-->
+  <!-- begrüssung -->
   <section id="begrüssung" class="begrüssung">
-    <div>
-      {% if page.showtext %}
-      <p>
-        {{ page.infotext }}
-      </p>
-      <br />
-      {% endif %}
-
+    <div class="begrüssung-textbox">
       <p class="editable">
-        You can edit me, by clicking on me. I'm way easier that the methode above. Hey neuer text
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
       </p>
     </div>
   </section>
 
-<section id="work" class="work">
+  <!-- Kompetenzen -->
+  <section class="skills">
+    <!--Kompetenz 1-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+
+    <!--Kompetenz 2-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+
+    <!--Kompetenz 3-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+
+    <!--Kompetenz 4-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+
+    <!--Kompetenz 5-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+
+    <!--Kompetenz 6-->
+    <div>
+      <img src="safespace.jpg">
+    </div>
+  </section>
+
+  <!-- Beschreibung -->
+  <section class="beschreibung">
+    <div>
+      <h2>
+        Beschreibung
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+  </section>
+
+  <!-- Arbeiten-->
+  <section class="work">
+    <div class="wrapper">
+      {% for work in site.work %}
+        <div class="fragment">
+          <div class="img-container">
+            <img src="{{ work.image_path }}" alt="{{ work.title }}" />
+          </div>
+          <h2>
+            {{ work.title }}
+          </h2>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+  </section>
+
+<!--<section id="work" class="work">
   <div class="wrapper" style="
   margin:auto;
   max-width:1100px;
@@ -101,6 +161,6 @@ showtext: true
       </div>
     {% endfor %}
   </div>
-</section>
+</section>-->
 </body>
 </html>
