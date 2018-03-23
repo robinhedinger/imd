@@ -183,7 +183,7 @@
 		overflow: hidden;
 		position: relative;
 	}
-	.skills div img{
+	.skills div video{
 		width: 100%;
 		height: auto;
 		transition: 5s;
