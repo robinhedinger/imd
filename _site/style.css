@@ -186,15 +186,15 @@
 	.skills div video{
 		width: 100%;
 		height: auto;
-		transition: 5s;
+		transition: 1s;
 		transform: translateX(-50%) translateY(-50%);
 		position: absolute;
 		left: 50%;
 		top:50%;
 	}
-	/*.skills div:hover img{
-		transform: scale(1.1);
-	}*/
+	.skills div:hover video{
+		transform: translateX(-50%) translateY(-50%) scale(1.1);
+	}
 	.skills div p{
 		position: absolute;
 		z-index: 10;
