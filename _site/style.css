@@ -179,11 +179,14 @@
 		float: left;
 		width: 33.33333%;
 		height: 50%;
-		background: red;
 		overflow: hidden;
 		position: relative;
 	}
-	.skills div video{
+
+	.part:nth-child(1){
+		background: #f77392;
+	}
+	.part video{
 		width: 100%;
 		height: auto;
 		transition: 1s;
@@ -191,18 +194,10 @@
 		position: absolute;
 		left: 50%;
 		top:50%;
+		z-index: 0;
 	}
-	.skills div:hover video{
+	.part:hover video{
 		cursor: pointer;
-	}
-	.skills div p{
-		position: absolute;
-		z-index: 10;
-		top: 20px;
-		left: 20px;
-		color: #001e66;
-		font-family: 'Patua One', cursive;
-		font-size: 22px;
 	}
 	.skills h2{
 		z-index: 5;
@@ -213,23 +208,82 @@
 		font-size: 20px;
 	  letter-spacing: 1px;
 		text-transform: uppercase;
-		transition: 0.2s;
+		transition: 0.3s;
+		transition-timing-function: cubic-bezier(.09,.34,.18,1);
 	}
-	.skills div:hover h2{
+	.part:hover h2{
 		transform: scale(0.9) translateX(-5%) translateY(-20%);
 	}
 
-	.skills div:nth-child(1) h2{
+	.part:nth-child(1) h2{
 		color: #001e66;
 	}
-	.skills div:nth-child(2) h2{
+	.part:nth-child(2) h2{
 		color: #fdf4ea;
 	}
+
+	.part p{
+		opacity: 0;
+		z-index: 10;
+		transition: 0.3s;
+		position: absolute;
+		top: 230px;
+		left: 70px;
+		cursor: pointer;
+	}
+
 	.detail{
+		float: left;
+		background: #f77392;
+		overflow: hidden;
+		position: relative;
 		width: 100%;
 		height: 100%;
 		z-index: 20;
 		transition: 0.2s;
+	}
+
+
+	.detail h2{
+		font-size: 50px;
+		top: 200px;
+		left: 100px;
+		color: #001e66;
+
+	}
+	.detail p{
+		opacity: 1;
+		transition: 0.3s;
+		position: absolute;
+		top: 250px;
+		left: 100px;
+		width: 400px;
+	}
+
+	.detail video{
+		width: auto;
+		height: 100%;
+		float: right;
+	}
+	.skills-wrapper{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+ 	.back p1{
+		font-size: 20px;
+	}
+
+	.back img{
+		width: 25px;
+		height: 25px;
+		transform: translateY(5px);
+	}
+
+	.back{
+		margin-top: 50px;
+		margin-left: 100px;
 	}
 
 /* Beschreibung */
@@ -250,6 +304,7 @@
 		font-size: 30px;
 		margin-bottom: 20px;
 	}
+
 
 /* Arbeiten */
 .work{
