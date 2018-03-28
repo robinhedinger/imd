@@ -332,6 +332,7 @@
 /* Arbeiten */
 .work{
 }
+
 .work .wrapper .fragment{
 	width: 400px;
 	height: 300px;
@@ -348,9 +349,6 @@
 }
 .work .wrapper .fragment h2{
 	margin:15px;
-}
-.work .wrapper{
-	width: 100%;
 }
 .wrapper{
 	background-color: red;
