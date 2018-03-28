@@ -276,9 +276,22 @@
 	width: 100%;
 }
 .fragment{
+	display: none;
 	float: left;
+	padding-left: 3%;
 	width: 100px;
 	height: 100px;
+}
+.fragment:nth-child(1) {
+    display: block;
+}
+
+.fragment:nth-child(2) {
+    display: block;
+}
+
+.fragment:nth-child(3) {
+    display: block;
 }
 .content{
 	opacity: 0.5;

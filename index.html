@@ -15,6 +15,7 @@ showtext: true
   <script src="js/scroll.js"></script>
   <script src="js/animation.js"></script>
   <script src="js/detail.js"></script>
+  <script src="js/posts.js"></script>
   <title>IMD Bekanntmachung</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="style.css" />
@@ -138,9 +139,9 @@ showtext: true
 
   <!-- Arbeiten-->
   <section class="work">
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
       {% for work in site.work %}
-        <div class="fragment">
+        <div id="fragment" class="fragment">
           <div class="img-container">
             <img src="{{ work.image_path }}" alt="{{ work.title }}">
           </div>
@@ -149,6 +150,7 @@ showtext: true
           </h2>
         </div>
       {% endfor %}
+        <button type="button" onclick="toggleDiv(fragment)">Show all posts</button>
     </div>
   </section>
 
