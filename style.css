@@ -175,7 +175,7 @@
 		width: 100%;
 		height: 600px;
 	}
-	.skills div{
+	.part{
 		float: left;
 		width: 33.33333%;
 		height: 50%;
@@ -225,12 +225,11 @@
 	.skills div:nth-child(2) h2{
 		color: #fdf4ea;
 	}
-
 	.detail{
 		width: 100%;
 		height: 100%;
 		z-index: 20;
-		position: fixed;
+		transition: 0.2s;
 	}
 
 /* Beschreibung */
