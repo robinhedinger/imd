@@ -1,7 +1,7 @@
 var part = part_id;
 
 function play(part_id){
-$(part).addClass('newClass');
+$(part).addClass('detail');
 
 
 }
