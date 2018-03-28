@@ -193,7 +193,7 @@
 		top:50%;
 	}
 	.skills div:hover video{
-		transform: translateX(-50%) translateY(-50%) scale(1.1);
+		cursor: pointer;
 	}
 	.skills div p{
 		position: absolute;
@@ -204,6 +204,28 @@
 		font-family: 'Patua One', cursive;
 		font-size: 22px;
 	}
+	.skills h2{
+		z-index: 5;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		font-family: 'Patua One', cursive;
+		font-size: 20px;
+	  letter-spacing: 1px;
+		text-transform: uppercase;
+		transition: 0.2s;
+	}
+	.skills div:hover h2{
+		transform: scale(0.9) translateX(-5%) translateY(-20%);
+	}
+
+	.skills div:nth-child(1) h2{
+		color: #001e66;
+	}
+	.skills div:nth-child(2) h2{
+		color: #fdf4ea;
+	}
+
 
 /* Beschreibung */
 	.beschreibung{
