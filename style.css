@@ -250,7 +250,7 @@
 }
 .fragment{
 	visibility: hidden;
-	float: center;
+	float: left;
 	width: 100px;
 	height: 100px;
 }
