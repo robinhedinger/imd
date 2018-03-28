@@ -13,6 +13,7 @@ showtext: true
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/scroll.js"></script>
+  <script src="js/animation.js"></script>
   <title>IMD Bekanntmachung</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="style.css" />
@@ -62,25 +63,13 @@ showtext: true
   <!-- Kompetenzen -->
   <section class="skills">
     <!--Kompetenz 1-->
-    <div style="text-align:center" onmouseover="Play()" onmouseout="Play2()">
+    <div style="text-align:center" onmouseover="Play1()">
       <video id="video1">
         <source src="img/skills/illustration.mp4" type="video/mp4" />
         <source src="img/skills/illustration.ogg" type="video/ogg" />
         Your browser does not support HTML5 video.
       </video>
-    </div>
-    <script type="text/javascript"> 
-var myVideo=document.getElementById("video1"); 
-
-function Play(){
-myVideo.play();    
-myVideo.playbackRate = 1.0;   
-}
-function Play2(){
-myVideo.playbackRate = -1.0;    
-}
-    
-</script> 
+    </div> 
 
     <!--Kompetenz 2-->
     <div>
