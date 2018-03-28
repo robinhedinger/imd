@@ -225,37 +225,38 @@
 	}
 
 /* Arbeiten */
-	.work{
-		height: 400px;
-	}
-	.work .wrapper .fragment{
-		width: 400px;
-		height: 300px;
-		margin:20px;
-	}
-	.work .wrapper .fragment .img-container{
-		overflow:hidden;
-		width: 400px;
-		height: 260px;
-		border-radius: 10px;
-	}
-	.work .wrapper .fragment .img-container img{
-		width: 100%;
-	}
-	.work .wrapper .fragment h2{
-		margin:15px;
-	}
-	.work .wrapper{
-		width: 100%;
-	}
-	.fragment{
-		float: left;
-		width: 100px;
-		height: 100px;
-	}
-	.content{
-		opacity: 0.5;
-	}
+.work{
+	height: 400px;
+}
+.work .wrapper .fragment{
+	width: 400px;
+	height: 300px;
+	margin:20px;
+}
+.work .wrapper .fragment .img-container{
+	overflow:hidden;
+	width: 400px;
+	height: 260px;
+	border-radius: 10px;
+}
+.work .wrapper .fragment .img-container img{
+	width: 100%;
+}
+.work .wrapper .fragment h2{
+	margin:15px;
+}
+.work .wrapper{
+	width: 100%;
+}
+.fragment{
+	visibility: hidden;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+.content{
+	opacity: 0.5;
+}
 
 /* Footer*/
 	.footer{
