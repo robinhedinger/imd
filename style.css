@@ -181,7 +181,9 @@
 		height: 50%;
 		overflow: hidden;
 		position: relative;
+		order: 2;
 	}
+
 
 	.part:nth-child(1){
 		background: #f77392;
@@ -189,7 +191,6 @@
 	.part video{
 		width: 100%;
 		height: auto;
-		transition: 1s;
 		transform: translateX(-50%) translateY(-50%);
 		position: absolute;
 		left: 50%;
@@ -236,11 +237,20 @@
 		float: left;
 		background: #f77392;
 		overflow: hidden;
-		position: relative;
+		position: fixed;
+		top: 0;
+		left:0;
+		bottom: 0;
+		right: 0;
 		width: 100%;
 		height: 100%;
 		z-index: 20;
 		transition: 0.2s;
+
+	}
+
+	.detail:hover{
+				cursor: url(img/ui/cursor.ico), auto;
 	}
 
 
@@ -258,12 +268,23 @@
 		top: 250px;
 		left: 100px;
 		width: 400px;
+				cursor: url(img/ui/cursor.ico), auto;
+	}
+
+	.detail video:hover{
+		width: auto;
+		height: 100%;
+		float: right;
+		cursor: url(img/ui/cursor.ico), auto;
 	}
 
 	.detail video{
 		width: auto;
 		height: 100%;
 		float: right;
+		cursor:cell;
+		left: 100%;
+		transform: translateX(-100%) translateY(-50%);
 	}
 	.skills-wrapper{
 		width: 100%;

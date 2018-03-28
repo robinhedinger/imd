@@ -1,15 +1,9 @@
 counter = 0;
 
-
-//function open_work(){
-//    var element = document.getElementById("fragment");
-//    element.style.display = "block";
-//  }
-
 function toggleDiv(id) {
     const div = document.querySelectorAll(".fragment");
     div.forEach(element => {
-       
+
     });
     for(i = 0; i<div.length; i++){
         if(counter == 0){
@@ -24,5 +18,5 @@ function toggleDiv(id) {
                 }
         }
     }
-    
+
 }
