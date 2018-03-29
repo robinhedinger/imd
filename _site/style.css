@@ -18,6 +18,11 @@
 		z-index:0;
 		height:100%;
 	}
+	.workpage{
+		background-color: white;
+		height: 100vh;
+		width: 100%;
+	}
 	.landingpage{
 		background:#001e66;
 		height:100vh;
@@ -330,6 +335,20 @@
 
 
 /* Arbeiten */
+.image {
+	width: 400px;
+	height: 150px;
+	border: 1px solid #000000;
+	display: -webkit-flex; /* Safari */
+	-webkit-justify-content: space-around; /* Safari 6.1+ */
+	display: flex;
+	justify-content: space-around; 
+  }
+  
+  .image div {
+	width: 70px;
+	height: 70px;
+  }
 .work{
 	width: 100%;
 	height: auto;

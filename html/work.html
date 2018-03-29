@@ -1,4 +1,6 @@
---- ---
+---
+
+---
 
 <!DOCTYPE html>
 <html lang="de">
@@ -20,30 +22,25 @@
 
 <body>
 
-    <!--customize-->
-    <section class="customize" id="customize">
-        <div class="selecter"></div>
-        <div class="box">
-            <div class="innerbox" id="innerbox">
-                <div id="color1" class="color1" onclick="color1()">
-                </div>
-                <div id="color2" class="color2" onclick="color2()">
-                </div>
-                <div id="color3" class="color3" onclick="color3()">
-                </div>
-            </div>
+<!-- Arbeiten-->
+  <section>
+    <div class="image">
+      {% for work in site.work %}
+        <div>
+          <div>
+            <img src="{{ work.image_path }}" alt="{{ work.title }}" />
+          </div>
+          <h2>
+            {{ work.title }}
+          </h2>
         </div>
-    </section>
+      {% endfor %}
+    </div>
 
-    <!--header-->
-    <section class="header" id="header">
-        <img id="customize-icon" class="customize-icon" src="../img/ui/customize.svg" onclick="customize()" />
-    </section>
+    <a href="/html/work.html" class="link">Show all posts</a>
 
-    <!--landingpage-->
-    <section class="landingpage" id="landingpage">
-        
-    </section>
+  </section>
+
 </body>
 
 </html>
