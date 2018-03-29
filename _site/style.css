@@ -332,7 +332,8 @@
 /* Arbeiten */
 .work{
 	width: 100%;
-	height: 100%;
+	height: auto;
+	background-color: white;
 }
 
 .work .wrapper .fragment{
@@ -353,7 +354,7 @@
 	margin:15px;
 }
 .wrapper{
-	background-color: red;
+	height: auto;
 }
 .fragment{
 	display: none;
@@ -376,11 +377,18 @@
 .content{
 	opacity: 0.5;
 }
+.link{
+	text-decoration: none;
+	text-align: center;
+	margin-left: 5%; 
+}
+
+
 
 /* Footer*/
 	.footer{
 		height: 70vh;
-		background: #001e66;
+		background: #001e66;		
 	}
 
 /* Mobile */
