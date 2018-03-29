@@ -335,6 +335,7 @@
 
 
 /* Arbeiten */
+
 .image {
 	width: 400px;
 	height: 150px;
@@ -351,18 +352,47 @@
   }
 .work{
 	width: 100%;
+	height: auto;
+	background-color: white;
+}
+
+.work .wrapper .fragment{
+	width: 400px;
+	height: 300px;
+	margin:20px;
+}
+.work .wrapper .fragment .img-container{
+	overflow:hidden;
+	width: 400px;
 	height: 260px;
+	border-radius: 10px;
+}
+.work .wrapper .fragment .img-container img{
+	width: 100%;
+}
+.work .wrapper .fragment h2{
+	margin:15px;
+}
+.wrapper{
+	height: auto;
+}
+.fragment{
+	display: none;
+	float: left;
+	padding-left: 3%;
+	width: 100px;
+	height: 100px;
 }
 .fragment:nth-child(1) {
-    display: flex;
+    display: block;
 }
 
 .fragment:nth-child(2) {
-    display: flex;
+    display: block;
 }
 
 .fragment:nth-child(3) {
-    display: flex;
+    display: block;
 }
 .content{
 	opacity: 0.5;
@@ -370,7 +400,7 @@
 .link{
 	text-decoration: none;
 	text-align: center;
-	margin-left: 5%;
+	margin-left: 5%; 
 }
 
 
@@ -378,7 +408,7 @@
 /* Footer*/
 	.footer{
 		height: 70vh;
-		background: #001e66;
+		background: #001e66;		
 	}
 
 /* Mobile */
