@@ -250,7 +250,7 @@
 	}
 
 	.detail:hover{
-				cursor: url(img/ui/cursor.ico), auto;
+				cursor: url(img/ui/back-cursor.ico), auto;
 	}
 
 
@@ -269,7 +269,7 @@
 		top: 250px;
 		left: 100px;
 		width: 400px;
-		cursor: url(img/ui/cursor.ico), auto;
+		cursor: url(img/ui/back-cursor.ico), auto;
 		transition: 0.3s;
 	}
 
@@ -277,14 +277,14 @@
 		width: auto;
 		height: 100%;
 		float: right;
-		cursor: url(img/ui/cursor.ico), auto;
+		cursor: url(img/ui/back-cursor.ico), auto;
 	}
 
 	.detail video{
 		width: auto;
 		height: 100%;
 		float: right;
-		cursor: url(img/ui/cursor.ico), auto;
+		cursor: url(img/ui/back-cursor.ico), auto;
 		left: 100%;
 		transform: translateX(-100%) translateY(-50%);
 	}
