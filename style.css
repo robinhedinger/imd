@@ -313,6 +313,40 @@
 		margin-top: 50px;
 		margin-left: 100px;
 	}
+	#part2{
+		background-color: #001e66;
+	}
+	#part3{
+		background-color: #fdf5ea;
+	}
+	#part4{
+		background-color: #fdf5ea;
+	}
+	#part5{
+		background-color: #ff5f84;
+	}
+	#part6{
+		background-color: #001e66;
+	}
+
+	#detail1{
+		background-color: #fdf5ea;
+	}
+	#detail2{
+		background-color: #ff5f84;
+	}
+	#detail3{
+		background-color: #001e66;
+	}
+	#detail4{
+		background-color: #001e66;
+	}
+	#detail5{
+		background-color: #fdf5ea;
+	}
+	#detail6{
+		background-color: #ff5f84;
+	}
 
 /* Beschreibung */
 	.beschreibung{
