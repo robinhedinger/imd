@@ -23,11 +23,11 @@
 <body>
 
 <!-- Arbeiten-->
-  <section>
-    <div class="image">
+<section class="work2">
+    <div class="wrapper2" id="wrapper">
       {% for work in site.work %}
-        <div>
-          <div>
+        <div id="fragment" class="fragment2">
+          <div class="img-container2">
             <img src="{{ work.image_path }}" alt="{{ work.title }}" />
           </div>
           <h2>
@@ -36,9 +36,9 @@
         </div>
       {% endfor %}
     </div>
-
-    <a href="/html/work.html" class="link">Show all posts</a>
-
+    <div class="work-button">
+      <a href="../index.html" class="link">Show all posts</a><img src="../img/ui/back.svg">
+    </div>
   </section>
 
 </body>
