@@ -355,6 +355,7 @@
 	height: 260px;
 	overflow: hidden;
 	border-radius: 15px;
+	box-shadow: 0px 5px 30px -10px rgba(0,0,0,0.1);
 }
 .img-container img{
 	width: 100%;
@@ -376,43 +377,12 @@
 .fragment:nth-child(3) {
     display: flex;
 }
-.work2{
-	width: 100%;
-	height: 300px;
-}
-.work2{
-	padding-bottom:50px;
-}
-.work2 .fragment2{
-	height: 290px;
-	width: 30%;
-	display: flex;
-	float: left;
-	margin-left: 2.5%;
-	margin-top: 5%;
-	position: relative;
-}
-.fragment2 .img-container2{
-	height: 260px;
-	overflow: hidden;
-	border-radius: 15px;
-}
-.img-container2 img{
-	width: 100%;
-	border-radius: 15px;
-}
-.fragment2 h2{
-	position: absolute;
-	bottom: 0px;
-	left: 30px;
-}
 .content{
 	opacity: 0.5;
 }
 .link{
 	text-decoration: none;
 	text-align: center;
-	margin-left: 5%;
 }
 
 .work-button{
@@ -446,7 +416,38 @@
 	height: 20px;
 	transform: translateY(5px) translateX(7px);
 }
+/* Work Detail */
+.work2{
+	position: absolute;
+	float: left;
+	background: red;
+}
 
+.wrapper2{
+	width:100%;
+
+}
+.work2 .fragment2{
+	height: 30%;
+	width: 400px;
+	margin: 10px;
+	position: relative;
+	float: left;
+}
+.fragment2 .img-container2{
+	height: 400px;
+	overflow: hidden;
+}
+.img-container2 img{
+	height: 100%;
+	transform: translateX(-50%);
+	margin-left: 50%;
+}
+.fragment2 h2{
+	position: absolute;
+	bottom: 0px;
+	left: 30px;
+}
 /* Footer*/
 	.footer{
 		height: 70vh;
