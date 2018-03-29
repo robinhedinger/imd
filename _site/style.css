@@ -419,20 +419,15 @@
 /* Work Detail */
 .work2{
 	position: absolute;
-	float: left;
 	background: red;
 }
 
-.wrapper2{
-	width:100%;
-
-}
 .work2 .fragment2{
-	height: 30%;
-	width: 400px;
-	margin: 10px;
+	height: 400px;
+	width: 30%;
+	margin: 1%;
 	position: relative;
-	float: left;
+	float: right;
 }
 .fragment2 .img-container2{
 	height: 400px;
