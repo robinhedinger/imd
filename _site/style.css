@@ -484,8 +484,24 @@
 }
 /* Footer*/
 	.footer{
-		height: 70vh;
+		height: 20vh;
 		background: #001e66;
+	}
+	.footer-container{
+		margin-top: 2%;	
+		float: right;
+		margin-right: 10%;
+	}
+	.footer-desc{
+		color: cyan;
+		margin-left:0;
+		font-size: 25px;
+	}
+	.footer-img{
+	width: 35px;
+	height: 35px;
+	transform: translateY(5px) translateX(4px);
+	transition: 0.3s;
 	}
 
 /* Mobile */
