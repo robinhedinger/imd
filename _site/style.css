@@ -167,12 +167,13 @@
 	.begrüssung div{
 		max-width: 500px;
 	  margin: 0 auto;
-		background: white;
+		background: #001e66;
 		padding:40px 60px;
 	}
 	.begrüssung-textbox{
 		transition-property: transform;
 		transition: 0.1s;
+		color: white;
 	}
 
 /* Kompetenzen */
@@ -187,6 +188,7 @@
 		overflow: hidden;
 		position: relative;
 		order: 2;
+
 	}
 
 
@@ -251,6 +253,7 @@
 		height: 100%;
 		z-index: 20;
 		transition: 0s;
+		
 
 	}
 
@@ -367,7 +370,6 @@
 		margin-bottom: 20px;
 	}
 
-
 /* Arbeiten */
 .work{
 	width: 100%;
@@ -451,9 +453,14 @@
 	transform: translateY(5px) translateX(7px);
 }
 /* Work Detail */
+.work3{
+	background: red;
+	background-size: cover;
+}
 .work2{
 	position: absolute;
 	background: red;
+	background-size: cover;
 }
 
 .work2 .fragment2{

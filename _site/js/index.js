@@ -168,6 +168,7 @@ function color3(){
 function changecolor1(){
 	var primary= "pink"
 	var secondary="blue"
+	var third= "black"
 	changecolor();
 
 function changecolor(){
@@ -179,13 +180,23 @@ function changecolor(){
 	$(".titletext")
 			.css( "color", primary)
 			.css("text-shadow", "0px 0px 20px "+primary);
-
+	$(".begrüssung")
+			.css( "background", primary);
+	$(".begrüssung-textbox")
+			.css( "background", primary)
+			.css( "color", third);
+	$(".footer")
+			.css( "background", primary);
+	$(".footer-desc")
+			.css( "color", third);
 }
 }
 
 function changecolor2(){
 	var primary= "#001e66"
 	var secondary="#4af2d6"
+	var third= "white"
+	var fourth= "cyan"
 	changecolor();
 
 function changecolor(){
@@ -197,13 +208,24 @@ function changecolor(){
 	$(".titletext")
 			.css( "color", primary)
 			.css("text-shadow", "0px 0px 20px "+primary);
-
+	$(".begrüssung")
+			.css( "background", primary);
+	$(".footer")
+			.css( "background", primary);
+	$(".footer-desc")
+			.css( "color", fourth);
+	$(".begrüssung-textbox")
+			.css( "background", primary)
+			.css( "color", third);
+	$(".footer-img")
+			.css( "src", "img/ui/Swisscom Logo.svg");
 }
 }
 
 function changecolor3(){
 	var primary= "#f9ea93"
 	var secondary="#00007c"
+	var third= "black"
 	changecolor();
 
 function changecolor(){
@@ -215,6 +237,17 @@ function changecolor(){
 	$(".titletext")
 			.css( "color", primary)
 			.css("text-shadow", "0px 0px 20px "+primary);
-
+	$(".begrüssung")
+			.css( "background", primary);
+	$(".footer")
+			.css( "background", primary)
+			.css( "color", third);
+	$(".begrüssung-textbox")
+			.css( "background", primary)
+			.css( "color", third);
+	$(".footer-desc")
+			.css( "color", third);
+	$(".footer-img")
+			.css( "background-image", "img/ui/Swisscom Logo2.svg");
 }
 }
