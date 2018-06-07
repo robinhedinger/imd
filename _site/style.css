@@ -203,7 +203,7 @@
 	}
 	.part video{
 		width: 100%;
-		height: auto;
+		height: 100%;
 		transform: translateX(-50%) translateY(-50%);
 		position: absolute;
 		left: 50%;
@@ -219,7 +219,7 @@
 		top: 20px;
 		left: 20px;
 		font-family: 'Patua One', cursive;
-		font-size: 20px;
+		font-size: 1em;
 	  letter-spacing: 1px;
 		text-transform: uppercase;
 		transition-timing-function: cubic-bezier(.09,.34,.18,1);
@@ -339,22 +339,22 @@
 	}
 
 	#detail1{
-		background-color: #fdf5ea;
+		background-color: #ff5f84;
 	}
 	#detail2{
-		background-color: #ff5f84;
+		background-color: #001e66;
 	}
 	#detail3{
-		background-color: #001e66;
-	}
-	#detail4{
-		background-color: #001e66;
-	}
-	#detail5{
 		background-color: #fdf5ea;
 	}
-	#detail6{
+	#detail4{
+		background-color: #fdf5ea;
+	}
+	#detail5{
 		background-color: #ff5f84;
+	}
+	#detail6{
+		background-color: #001e66;
 	}
 
 /* Beschreibung */
@@ -575,4 +575,10 @@
 				z-index:0;
 				height:100%;
 			}
+
+			.skills h2{
+				font-size: 0.7em;
+			}
 	}
+
+
