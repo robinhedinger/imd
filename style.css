@@ -130,7 +130,7 @@
 	.color1{
 		width: 33.33%;
 		height: 130px;
-		background: pink;
+		background: #ff5f84;
 		float: left;
 		transition: 0.5s;
 	}
@@ -147,7 +147,7 @@
 	.color3{
 		width: 33.33%;
 		height: 130px;
-		background: #f9ea93;
+		background: #fdf5ea;
 		float: left;
 		transition: 0.5s;
 	}
@@ -233,6 +233,18 @@
 		color: #001e66;
 	}
 	.part:nth-child(2) h2{
+		color: #fdf4ea;
+	}
+	.part:nth-child(3) h2{
+		color: black;
+	}
+	.part:nth-child(4) h2{
+		color: black;
+	}
+	.part:nth-child(5) h2{
+		color: #001e66;
+	}
+	.part:nth-child(6) h2{
 		color: #fdf4ea;
 	}
 

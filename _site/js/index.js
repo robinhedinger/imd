@@ -166,8 +166,8 @@ function color3(){
 }
 
 function changecolor1(){
-	var primary= "pink"
-	var secondary="blue"
+	var primary= "#ff5f84"
+	var secondary="#001e66"
 	var third= "black"
 	changecolor();
 
@@ -223,8 +223,8 @@ function changecolor(){
 }
 
 function changecolor3(){
-	var primary= "#f9ea93"
-	var secondary="#00007c"
+	var primary= "#fdf5ea"
+	var secondary="black"
 	var third= "black"
 	changecolor();
 
