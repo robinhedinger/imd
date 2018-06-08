@@ -523,9 +523,27 @@
 			flex-wrap: wrap;
 		}
 
-		.part {
-			width: 50%;
-		}
+	#detail1, #detail2, #detail3, #detail4, #detail5, #detail6 {
+		width: 50%;
+	}
+	.part {
+		overflow: visible;
+		height: 33.3333%;
+	}
+
+.footer-desc {
+	font-size: 15px;
+}
+.part h2.editable {
+	padding-left: 10px;
+}
+
+.customize-icon {
+	padding-left: 10px;
+}
+.skills {
+	width: 100%;
+}
 	}
 
 
