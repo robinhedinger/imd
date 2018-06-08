@@ -514,7 +514,7 @@
 
 /* Mobile */
 
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 500px) {
 		.kompetenz{
 			display: flex;
 			-ms-flex-direction: column;
