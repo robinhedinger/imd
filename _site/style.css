@@ -351,14 +351,17 @@
 	padding-bottom:150px;
 	position: relative;
 }
+
+.fragment{
+	margin-top: 3%;
+}
+
 .work .fragment{
 	height: 290px;
-	width: 30%;
-	display: none;
+	width: 290px;
 	float: left;
 	margin-left: 2.5%;
 	position: relative;
-	border-radius: 15px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-width: 300px;
@@ -548,7 +551,7 @@
 			  -moz-user-select: none; /* Firefox */
 			  -ms-user-select: none; /* Internet Explorer/Edge */
 			  user-select: none; /* Non-prefixed version, currently
-			                                  supported by Chrome and Opera */
+			                    supported by Chrome and Opera */
 			}
 			#title {
 				background:transparent;
