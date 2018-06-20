@@ -196,6 +196,28 @@
 		text-align: center;
 		margin-bottom: 200px;
 	}
+
+	.more{
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		width: 20px;
+		height: 20px;
+		background-image: url("img/ui/more.svg");
+	}
+	.more-text-box{
+		position: absolute;
+		bottom: 10px;
+		left: 35px;
+		height: 20px;
+		overflow: hidden;
+	}
+	.more-text-box div{
+		position: relative;
+		color: #001e66;
+		left: 0px;
+	}
+
 	.part{
 		width: 800px;
 		height: 400px;
@@ -233,9 +255,6 @@
 		transition-timing-function: cubic-bezier(.09,.34,.18,1);
 		color: #001e66;
 	}
-	.part:hover h2{
-		color: #fdf5ea;
-	}
 
 	.part p{
 		opacity: 0;
@@ -266,7 +285,6 @@
 	.detail:hover{
 				cursor: url(img/ui/back-cursor.ico), auto;
 	}
-
 
 	.detail h2{
 		font-size: 50px;
