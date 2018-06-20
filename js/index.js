@@ -224,7 +224,7 @@ function changecolor(){
 
 function changecolor3(){
 	var primary= "#fdf5ea"
-	var secondary="black"
+	var secondary="rgb(10, 38, 112)"
 	var third= "black"
 	changecolor();
 
