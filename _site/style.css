@@ -130,7 +130,7 @@
 	.color1{
 		width: 33.33%;
 		height: 130px;
-		background: #ff5f84;
+		background: rgb(246, 114, 145);
 		float: left;
 		transition: 0.5s;
 	}
@@ -140,7 +140,7 @@
 	.color2{
 		width: 33.33%;
 		height: 130px;
-		background: #001e66;
+		background: rgb(10, 38, 112);
 		float: left;
 		transition: 0.5s;
 	}
@@ -335,7 +335,7 @@
 		margin-left: 100px;
 	}
 	#part2{
-		background-color: #001e66;
+		background-color: rgb(10, 38, 112);
 	}
 	#part3{
 		background-color: #fdf5ea;
@@ -344,14 +344,14 @@
 		background-color: #fdf5ea;
 	}
 	#part5{
-		background-color: #ff5f84;
+		background-color: rgb(246, 114, 145);
 	}
 	#part6{
-		background-color: #001e66;
+		background-color: rgb(10, 38, 112);
 	}
 
 	#detail1{
-		background-color: #ff5f84;
+		background-color: rgb(246, 114, 145);
 	}
 	#detail2{
 		background-color: #001e66;
@@ -363,10 +363,10 @@
 		background-color: #fdf5ea;
 	}
 	#detail5{
-		background-color: #ff5f84;
+		background-color: rgb(246, 114, 145);
 	}
 	#detail6{
-		background-color: #001e66;
+		background-color: rgb(10, 38, 112);
 	}
 
 /* Beschreibung */
