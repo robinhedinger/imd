@@ -204,6 +204,7 @@
 		width: 20px;
 		height: 20px;
 		background-image: url("img/ui/more.svg");
+		transition: 0.3s;
 	}
 	.more-text-box{
 		position: absolute;
@@ -211,11 +212,23 @@
 		left: 35px;
 		height: 20px;
 		overflow: hidden;
+
 	}
 	.more-text-box div{
 		position: relative;
 		color: #001e66;
-		left: 0px;
+		left: -76px;
+		font-size: 17px;
+		transition: 0.3s;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	.part:hover .more-text-box div{
+		left:0px;
+	}
+	.part:hover .more{
+		transform: rotate(90deg);
 	}
 
 	.part{
