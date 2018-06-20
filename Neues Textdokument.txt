@@ -1,0 +1,6 @@
+beige:
+#fdf5ea
+rot:
+#f77392
+blau:
+#001e66
