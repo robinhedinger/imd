@@ -162,17 +162,17 @@
 		background: #001e66;
 		/*padding:100px 30px;*/
 		height:50vh;
+		font-size: 16px;
 	}
 	.begrüssung div{
 		max-width: 500px;
 	  margin: 0 auto;
-		background: #001e66;
-		padding:40px 60px;
+		background: #fdf5ea;
+		padding:100px 70px;
 	}
 	.begrüssung-textbox{
-		transition-property: transform;
-		transition: 0.1s;
-		color: white;
+		color: black;
+
 	}
 
 /* Kompetenzen */
@@ -194,6 +194,7 @@
 		line-height: 20px;
 		font-kerning: normal;
 		text-align: center;
+		margin-bottom: 200px;
 	}
 	.part{
 		width: 800px;
@@ -202,6 +203,7 @@
 		position: relative;
 		order: 2;
 		margin: 150px auto;
+		background: white;
 	}
 	.part video{
 		width: 400px;
@@ -229,9 +231,7 @@
 	  letter-spacing: 1px;
 		text-transform: uppercase;
 		transition-timing-function: cubic-bezier(.09,.34,.18,1);
-	}
-	.part h2{
-		color: #fdf5ea;
+		color: #001e66;
 	}
 	.part:hover h2{
 		color: #fdf5ea;
@@ -327,13 +327,14 @@
 	.beschreibung{
 		height: 70vh;
 		position: relative;
+		background: #001e66;
 	}
 	.beschreibung div{
-		max-width: 500px;
-		position: absolute;
-		left: 50%;
 		top:50%;
-		transform: translateX(-50%) translateY(-50%);
+		max-width: 500px;
+		margin: auto;
+		background-color: #fdf5ea;
+		padding:100px 70px;
 	}
 	.beschreibung h2{
 		font-family: 'Patua One', cursive;
@@ -341,7 +342,36 @@
 		font-size: 30px;
 		margin-bottom: 20px;
 	}
-
+/* Arbeitn Neu*/
+.arbeiten{
+	height: 30vh;
+	width: 100%;
+	background-color: #001e66;
+}
+.arbeiten-button{
+	background: #f77392;
+	padding: 20px 25px;
+	border-radius: 2px;
+	margin: auto;
+	text-align: center;
+	max-width: 150px;
+	font-size: 20px;
+	color: #001e66;
+	transform: scale(0.9);
+	transition: 0.5s;
+	cursor: pointer;
+	transition-timing-function: cubic-bezier(0.25, 0, 0, 1.01);
+}
+.arbeiten-button:hover{
+	box-shadow: 0px 5px 20px #f7739280;
+	transform: scale(1);
+	padding: 2 px 30px;
+}
+.arbeiten-button a{
+	text-align: center;
+	text-decoration: none;
+	color: #001e66;
+}
 /* Arbeiten */
 .work{
 	width: 100%;

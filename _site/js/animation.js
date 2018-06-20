@@ -1,3 +1,3 @@
-function play(video){
+/*function play(video){
 video.play();
 }
