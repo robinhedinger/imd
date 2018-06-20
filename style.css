@@ -37,7 +37,6 @@
 		font-weight: 600;
 		font-size: 120px;
 		color: #001e66;
-		text-shadow: 0px 0px 20px #001e66;
 		text-transform: uppercase;
 	  -webkit-touch-callout: none; /* iOS Safari */
 	  -webkit-user-select: none; /* Safari */
@@ -543,7 +542,6 @@
 				font-family: 'Patua One', cursive;
 				font-weight: 600;
 				font-size: 100px;
-				text-shadow: 0px 0px 20px #001e66;
 				text-transform: uppercase;
 			  -webkit-touch-callout: none; /* iOS Safari */
 			  -webkit-user-select: none; /* Safari */

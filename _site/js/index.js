@@ -178,8 +178,7 @@ function changecolor(){
 			 .css( "background", primary )
 			 .css( "transition", "0.2s");
 	$(".titletext")
-			.css( "color", primary)
-			.css("text-shadow", "0px 0px 20px "+primary);
+			.css( "color", primary);
 	$(".begrüssung")
 			.css( "background", primary);
 	$(".begrüssung-textbox")
@@ -206,8 +205,7 @@ function changecolor(){
 			 .css( "background", primary )
 			 .css( "transition", "0.2s");
 	$(".titletext")
-			.css( "color", primary)
-			.css("text-shadow", "0px 0px 20px "+primary);
+			 .css( "color", primary);
 	$(".begrüssung")
 			.css( "background", primary);
 	$(".footer")
@@ -235,8 +233,7 @@ function changecolor(){
 			 .css( "background", primary )
 			 .css( "transition", "0.2s");
 	$(".titletext")
-			.css( "color", primary)
-			.css("text-shadow", "0px 0px 20px "+primary);
+			 .css( "color", primary);
 	$(".begrüssung")
 			.css( "background", primary);
 	$(".footer")
