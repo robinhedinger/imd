@@ -66,7 +66,7 @@
 		transform: translateX(-50%) translateY(-50%);
 		font-family: 'Patua One', cursive;
 		font-size: 120px;
-		color: #4af2d6;
+		color: rgb(246, 114, 145);
 		font-weight: 600;
 		text-transform: uppercase;
 	  -webkit-touch-callout: none; /* iOS Safari */

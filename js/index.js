@@ -194,7 +194,7 @@ function changecolor(){
 
 function changecolor2(){
 	var primary= "#001e66"
-	var secondary="#4af2d6"
+	var secondary="rgb(246, 114, 145)"
 	var third= "white"
 	var fourth= "cyan"
 	changecolor();
