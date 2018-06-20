@@ -35,7 +35,7 @@
             </div>
       </div>
   </section>
- 
+
   <!--header-->
   <section class="header" id="header">
     <img id="customize-icon" class="customize-icon" src="img/ui/customize.svg" onclick="customize()" />
@@ -154,7 +154,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         Beschreibung
       </h2>
       <p class="editable">
-        Die Ausbildung des Interactive Media Designers dauert 4 Jahre und kann begleitend mit einer BM gemacht werden. Es gibt jeweils eine Berufsschule in Bern, St.Gallen und Basel. Ab dem dritten Schuljahr hat man 1 Tag Schule vorher 2 Tage pro Woche. Projekte für den Interactive Media Designer sind in der ganzen Schweiz verfügbar.   
+        Die Ausbildung des Interactive Media Designers dauert 4 Jahre und kann begleitend mit einer BM gemacht werden. Es gibt jeweils eine Berufsschule in Bern, St.Gallen und Basel. Ab dem dritten Schuljahr hat man 1 Tag Schule vorher 2 Tage pro Woche. Projekte für den Interactive Media Designer sind in der ganzen Schweiz verfügbar.
       </p>
     </div>
   </section>
@@ -163,10 +163,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
   <section class="work">
     <div class="wrapper" id="wrapper">
       {% for work in site.work %}
-        <div id="fragment" class="fragment">
-          <div class="img-container">
-            <img src="{{ work.image_path }}" alt="{{ work.title }}" />
-          </div>
+        <div id="fragment" class="fragment" style="background-image:url('{{ work.image_path }}')">
           <h2>
             {{ work.title }}
           </h2>
