@@ -179,18 +179,17 @@
 /* Kompetenzen */
 	.kompetenz{
 		display: flex;
-    	-ms-flex-direction: column;
-    	-webkit-flex-direction: column;
-    	flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 	}
 	.skills{
 		width: 100%;
-		height: 600px;
+		background-color: #001e66;
 	}
 	.part{
-		float: left;
 		width: 33.33333%;
-		height: 50%;
+		height: 300px;
 		overflow: hidden;
 		position: relative;
 		order: 2;
