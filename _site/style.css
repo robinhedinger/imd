@@ -228,7 +228,7 @@
 		left:0px;
 	}
 	.part:hover .more{
-		transform: rotate(90deg);
+		transform: rotate(45deg);
 	}
 
 	.part{
