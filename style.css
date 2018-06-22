@@ -205,7 +205,7 @@
 		left: 10px;
 		width: 20px;
 		height: 20px;
-		background-image: url("img/ui/more.svg");
+		background-image: url("./img/ui/more.svg");
 		transition: 0.3s;
 	}
 	.part .more-text-box{
@@ -435,7 +435,7 @@
 	z-index: 20;
 }
 .work-back div{
-	background-image: url('img/ui/back.svg');
+	background-image: url('./img/ui/back.svg');
 	width: 25px;
 	height: 25px;
 	float: left;
@@ -513,7 +513,7 @@
 	right: 20px;
 	width: 30px;
 	height: 30px;
-	background-image: url('/img/ui/less.svg');
+	background-image: url('./img/ui/less.svg');
 	cursor: pointer;
 }
 .content{
@@ -723,6 +723,11 @@
 		.work-detail, .work-detail:hover{
 			margin: 0;
 			width: 100%;
+		}
+		.work-detail .work-close{
+			width: 30px;
+			height: 30px;
+			top: 30px;
 		}
 	}
 		@media only screen and (min-width: 550px) and (max-width: 900px) {
