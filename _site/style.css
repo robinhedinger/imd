@@ -85,7 +85,7 @@
 	.customize-icon{
 		width: 30px;
 		margin: 20px;
-		cursor: pointer;
+		cursor: pointer;sa
 	}
 
 /* Customize */
@@ -639,110 +639,4 @@
 		100%{
 			transform: translateY(-203px);
 		}
-	}
-
-
-/* Mobile */
-
-	@media only screen and (max-width: 500px) {
-		.kompetenz{
-			display: flex;
-			-ms-flex-direction: column;
-			-webkit-flex-direction: column;
-			flex-direction: column;
-			flex-wrap: wrap;
-		}
-
-	#detail1, #detail2, #detail3, #detail4, #detail5, #detail6 {
-		width: 50%;
-	}
-	.part {
-		overflow: visible;
-		height: 33.3333%;
-	}
-
-.footer-desc {
-	font-size: 15px;
-}
-
-
-.customize-icon {
-	padding-left: 10px;
-}
-.skills {
-	width: 100%;
-}
-.video{
-
-}
-	}
-
-	@media only screen and (max-width: 1100px){
-
-	}
-	@media only screen and (max-width: 600px) {
-
-		/* Landingpage */
-			.titletext2{
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translateX(-50%) translateY(-50%);
-				font-family: 'Patua One', cursive;
-				font-size: 100px;
-				font-weight: 600;
-				text-transform: uppercase;
-			  -webkit-touch-callout: none; /* iOS Safari */
-			  -webkit-user-select: none; /* Safari */
-			  -khtml-user-select: none; /* Konqueror HTML */
-			  -moz-user-select: none; /* Firefox */
-			  -ms-user-select: none; /* Internet Explorer/Edge */
-			  user-select: none; /* Non-prefixed version, currently
-			                                  supported by Chrome and Opera */
-			}
-			.titletext{
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translateX(-50%) translateY(-50%);
-				font-family: 'Patua One', cursive;
-				font-weight: 600;
-				font-size: 100px;
-				text-transform: uppercase;
-			  -webkit-touch-callout: none; /* iOS Safari */
-			  -webkit-user-select: none; /* Safari */
-			  -khtml-user-select: none; /* Konqueror HTML */
-			  -moz-user-select: none; /* Firefox */
-			  -ms-user-select: none; /* Internet Explorer/Edge */
-			  user-select: none; /* Non-prefixed version, currently
-			                    supported by Chrome and Opera */
-			}
-			#title {
-				background:transparent;
-				position:absolute;
-				top:0%;
-				bottom: 0%;
-				margin-top: 0px;
-				margin-left: 0px;
-				text-align: center;
-				width:100%;
-				z-index:0;
-				height:100%;
-			}
-			#title2 {
-				background:transparent;
-				position:absolute;
-				top:0%;
-				bottom: 0%;
-				margin-top: 0px;
-				margin-left: 0px;
-				text-align: center;
-				width:100%;
-				z-index:0;
-				height:100%;
-			}
-
-			.skills h2{
-				font-size: 0.7em;
-			}
 	}
