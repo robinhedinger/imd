@@ -282,7 +282,6 @@
 		position: absolute;
 		top: 50%;
 		left: 60px;
-		cursor: pointer;
 		color: #001e66;
 		margin-top: 50px;
 		width: 400px;
@@ -314,8 +313,7 @@
 		position: absolute;
 		top: 30%;
 		left: 60;
-		width: 400px;
-		cursor: url(img/ui/back-cursor.ico), auto;
+		width: 300px;
 		transition: 0.3s;
 	}
 	.detail .more{
@@ -354,9 +352,9 @@
 
 /* Beschreibung */
 	.beschreibung{
-		height: 70vh;
 		position: relative;
 		background: #001e66;
+		padding-bottom: 150px;
 	}
 	.beschreibung div{
 		top:50%;
@@ -429,7 +427,7 @@
 .work-back{
 	color: #f77392;
 	font-size: 18px;
-	position: fixed;
+	position: absolute;
 	top: 20px;
 	left: 10px;
 	cursor: pointer;
@@ -446,8 +444,6 @@
 }
 
 .work-container:hover{
-	width: 30%;
-	margin: 1.5%;
 	transform: scale(1.1);
 	cursor: pointer;
 }
@@ -640,9 +636,192 @@
 			transform: translateY(-203px);
 		}
 	}
+	@media only screen and (min-width: 1024px) {
+		.work-back{
+			position: fixed;
+		}
+	}
+	@media only screen and (max-width: 900px) {
+		.skills-title, .beschreibung-title{
+			font-size: 40px;
+			padding-left: 20px;
+		}
+		.skills-title{
+			margin-bottom: -50px;
+		}
+		.part{
+			width: 90%;
+			height: 600px;
+			overflow: hidden;
+			position: relative;
+			order: 2;
+			margin: 150px auto;
+			background: white;
+			transition: 0.5s;
+			box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+			cursor: default !important;
+		}
+		.detail{
+			cursor: default !important;
+		}
+		.part video{
+			width: 100%;
+			transform:translateY(0%);
+			position: absolute;
+			right: 0%;
+			top:25%;
+			z-index: 0;
+		}
+		.part h2{
+			transform: translateY(0px) !important;
+			top: 50px;
+			left: 20px;
+			font-size: 30px;
+		}
+		.part p{
+			display: block;
+			top: 70px;
+			opacity: 1;
+			left: 20px;
+			width: 90%;
+		}
+		.beschreibung div{
+			top:50%;
+			width: 95%;
+			margin: 100px auto 0;
+			background-color: #fdf5ea;
+			padding:0px;
+		}
+		.beschreibung p{
+			padding: 40px;
+		}
+		.begrüssung div{
+			width: 95%;
+			padding: 0;
+		}
+		.begrüssung p{
+			padding: 40px;
+		}
+		.danke-container .danke p{
+			font-size: 20px;
+			line-height: 50px;
+		}
+		.footer-container{
+			left: 50%;
+			transform: translateX(-50%);
+			margin: 0;
+			width: 270px;
+			bottom: 20px;
+		}
+		.work-container{
+			width: 47%;
+		}
+		.work-container:hover{
+			transform: scale(1);
+			cursor: pointer;
+		}
+		.work-detail, .work-detail:hover{
+			margin: 0;
+			width: 100%;
+		}
+	}
+		@media only screen and (min-width: 550px) and (max-width: 900px) {
 
+			.part{
+				width: 95%;
+				height: 300px;
+				overflow: hidden;
+				position: relative;
+				order: 2;
+				margin: 150px auto;
+				background: white;
+				transition: 0.5s;
+				box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+			}
+			.part video{
+				width: auto;
+				height: 100%;
+				transform:translateY(-50%);
+				position: absolute;
+				right: 0%;
+				top:50%;
+				z-index: 0;
+			}
+			.part:hover{
+				cursor: pointer;
+				box-shadow: 0px 30px 40px rgba(0,0,0,0.2);
+			}
+			.part h2{
+				z-index: 5;
+				position: absolute;
+				float: right;
+				text-align: left;
+				font-family: 'Patua One', cursive;
+				font-size: 30px;
+				padding-right: 100px;
+				left: 20px;
+				right: 50%;
+				top: 50%;
+			  letter-spacing: 1px;
+				text-transform: uppercase;
+				transition: top 0.6s;
+				transition-timing-function: cubic-bezier(.09,.34,.18,1);
+				color: #001e66;
+			}
 
+			.part p{
+				opacity: 0;
+				z-index: 10;
+				transition: 0.3s;
+				position: absolute;
+				top: 50%;
+				left: 60px;
+				color: #001e66;
+				margin-top: 50px;
+				width: 400px;
+			}
+			.detail{
+				overflow: hidden;
+				z-index: 20;
+				transition: 1s;
+				width: 100%;
+				height: 300px;
+			}
 
+			.detail:hover{
+						cursor: url(img/ui/back-cursor.ico), auto;
+			}
+
+			.detail h2{
+				position: absolute;
+				top: 30%;
+				left: 40px;
+				transition: 0.3s;
+				transform: translateY(0px)!important;
+
+			}
+			.detail p{
+				opacity: 1;
+				transition: 0s;
+				position: absolute;
+				top: 30%;
+				left: 40px;
+				width: 250px;
+				transition: 0.3s;
+			}
+			.detail .more{
+				transform: scale(0.1);
+				opacity: 0;
+			}
+			.detail:hover .more{
+				transform: scale(0.1);
+				opacity: 0;
+			}
+			.detail:hover .more-text-box div{
+				left: -50px;
+			}
+		}
+	/*Title Fix*/
 	@media only screen and (max-width: 600px) {
 
 		/* Landingpage */
@@ -704,4 +883,10 @@
 				z-index:0;
 				height:100%;
 			}
+	}
+	@media only screen and (max-width: 370px) {
+		.danke-container .danke p{
+			font-size: 16px;
+			line-height: 50px;
+		}
 	}
