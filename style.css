@@ -85,6 +85,7 @@
 	.customize-icon{
 		width: 30px;
 		margin: 20px;
+		cursor: pointer;
 	}
 
 /* Customize */
@@ -408,7 +409,7 @@
 	height: 100%;
 }
 .wrapper{
-	padding-top: 20px;
+	padding-top: 100px;
 	max-width: 800px;
 	margin: auto;
 }
@@ -425,6 +426,24 @@
 	margin: 1.5%;
 	transition: 0.2s;
 }
+.work-back{
+	color: #f77392;
+	font-size: 18px;
+	position: fixed;
+	top: 20px;
+	left: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	z-index: 20;
+}
+.work-back div{
+	background-image: url('img/ui/back.svg');
+	width: 25px;
+	height: 25px;
+	float: left;
+	transform: translateY(-3px);
+
+}
 
 .work-container:hover{
 	width: 30%;
@@ -436,6 +455,9 @@
 	margin: 20px;
 	color: #001e66;
 }
+.work-container .work-lj{
+	display: none;
+}
 
 .work-detail{
 	position: fixed;
@@ -444,6 +466,7 @@
 	top: 0;
 	bottom: 0;
 	width: 97%;
+	z-index: 30;
 }
 
 .work-detail .fragment{
@@ -456,11 +479,13 @@
 	background-position: center;
 }
 .work-detail .work-text{
-	width: 90vw;
+	width: 47vw;
 	margin: auto;
 	font-size: 30px;
-	text-align: center;
-	margin-top: 30px;
+	text-align: right;
+	margin-top: 20px;
+	float: left;
+	font-weight: bold;
 }
 .work-detail:hover{
 	transform: scale(1);
@@ -472,6 +497,14 @@
 	width: 97%;
 	cursor: default;
 }
+.work-detail .work-lj{
+	display: block;
+	float: left;
+	font-size: 30px;
+	padding-top: 20px;
+	text-align: left;
+	margin-left: 10px;
+}
 
 .work-container .work-close{
 	display: none;
@@ -482,9 +515,10 @@
 	position: absolute;
 	top: 10px;
 	right: 20px;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	background-image: url('/img/ui/less.svg');
+	cursor: pointer;
 }
 .content{
 	opacity: 0.5;

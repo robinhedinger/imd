@@ -22,21 +22,25 @@
 </head>
 
 <body class="work-body">
-
+<a class="work-back" href="/"><div></div>Zurück</a>
 <!-- Arbeiten-->
 <section class="work">
   <div class="wrapper" id="wrapper">
     {% for work in site.work %}
-
     <div class="work-container" id="work-container">
-      <a href="#" onclick="window.location.reload(true);">
+      <a onclick="window.location.reload(true);">
       <div class="work-close"></div>
       </a>
       <div id="fragment" class="fragment" style="background-image:url('{{ work.image_path }}')">
       </div>
       <h2 class="work-text">
         {{ work.title }}
+        <h2 class="work-lj">
+          {{ work.lehrjahr }}. Lehrjahr
+        </h2>
       </h2>
+
+
     </div>
     {% endfor %}
   </div>
