@@ -160,15 +160,14 @@
 /* Begrüssung*/
 	.begrüssung{
 		background: #001e66;
-		/*padding:100px 30px;*/
 		height:50vh;
 		font-size: 16px;
 	}
 	.begrüssung div{
-		max-width: 500px;
+		max-width: 700px;
 	  margin: 0 auto;
 		background: #fdf5ea;
-		padding:100px 70px;
+		padding:100px 50px;
 	}
 	.begrüssung-textbox{
 		color: black;
@@ -186,18 +185,20 @@
 		width: 100%;
 		background-color: #001e66;
 	}
-	.skills-title {
+	.skills-title,.beschreibung-title{
 		position: relative;
 		color: #f77392;
 		font-family: 'Patua One';
 		font-size: 60px;
 		line-height: 20px;
 		font-kerning: normal;
-		text-align: center;
+		text-align: left;
 		margin-bottom: 200px;
+		max-width: 800px;
+		margin: auto;
 	}
 
-	.more{
+	.part .more{
 		position: absolute;
 		bottom: 10px;
 		left: 10px;
@@ -206,7 +207,7 @@
 		background-image: url("img/ui/more.svg");
 		transition: 0.3s;
 	}
-	.more-text-box{
+	.part .more-text-box{
 		position: absolute;
 		bottom: 10px;
 		left: 35px;
@@ -214,10 +215,10 @@
 		overflow: hidden;
 
 	}
-	.more-text-box div{
+	.part .more-text-box div{
 		position: relative;
 		color: #001e66;
-		left: -76px;
+		left: -50px;
 		font-size: 17px;
 		transition: 0.3s;
 		text-transform: uppercase;
@@ -239,9 +240,11 @@
 		order: 2;
 		margin: 150px auto;
 		background: white;
+		transition: 0.5s;
+		box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
 	}
 	.part video{
-		width: 400px;
+		width: auto;
 		height: 100%;
 		transform:translateY(-50%);
 		position: absolute;
@@ -249,22 +252,24 @@
 		top:50%;
 		z-index: 0;
 	}
-	.part:hover video{
+	.part:hover{
 		cursor: pointer;
+		box-shadow: 0px 30px 40px rgba(0,0,0,0.2);
 	}
 	.part h2{
 		z-index: 5;
 		position: absolute;
 		float: right;
-		text-align: right;
+		text-align: left;
 		font-family: 'Patua One', cursive;
 		font-size: 40px;
 		padding-right: 100px;
-		left: 0%;
+		left: 50px;
 		right: 50%;
 		top: 50%;
 	  letter-spacing: 1px;
 		text-transform: uppercase;
+		transition: top 0.6s;
 		transition-timing-function: cubic-bezier(.09,.34,.18,1);
 		color: #001e66;
 	}
@@ -274,25 +279,20 @@
 		z-index: 10;
 		transition: 0.3s;
 		position: absolute;
-		top: 230px;
-		left: 70px;
+		top: 50%;
+		left: 60px;
 		cursor: pointer;
-		color: #fdf5ea;
+		color: #001e66;
+		margin-top: 50px;
+		width: 400px;
 	}
 
 	.detail{
-		float: left;
-		background: #f77392;
 		overflow: hidden;
-		position: fixed;
-		top: 0;
-		left:0;
-		bottom: 0;
-		right: 0;
-		width: 100%;
-		height: 100%;
 		z-index: 20;
-		transition: 0s;
+		transition: 1s;
+		width: 100%;
+		height: 600px;
 	}
 
 	.detail:hover{
@@ -300,39 +300,36 @@
 	}
 
 	.detail h2{
-		font-size: 50px;
-		top: 200px;
-		left: 100px;
-		color: #001e66;
-		transition: left 0.3s;
+		position: absolute;
+		top: 30%;
+		left: 60px;
+		transition: 0.3s;
+		transform: translateY(0px)!important;
 
 	}
 	.detail p{
 		opacity: 1;
 		transition: 0s;
 		position: absolute;
-		top: 250px;
-		left: 100px;
+		top: 30%;
+		left: 60;
 		width: 400px;
 		cursor: url(img/ui/back-cursor.ico), auto;
 		transition: 0.3s;
 	}
-
-	.detail video:hover{
-		width: auto;
-		height: 100%;
-		float: right;
-		cursor: url(img/ui/back-cursor.ico), auto;
+	.detail .more{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	.detail:hover .more{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	.detail:hover .more-text-box div{
+		left: -50px;
 	}
 
-	.detail video{
-		width: auto;
-		height: 100%;
-		float: right;
-		cursor: url(img/ui/back-cursor.ico), auto;
-		left: 100%;
-		transform: translateX(-100%) translateY(-50%);
-	}
+
 	.skills-wrapper{
 		width: 100%;
 		height: 100%;
@@ -362,17 +359,15 @@
 	}
 	.beschreibung div{
 		top:50%;
-		max-width: 500px;
-		margin: auto;
+		max-width: 700px;
+		margin: 100px auto 0;
 		background-color: #fdf5ea;
-		padding:100px 70px;
+		padding:100px 50px;
 	}
 	.beschreibung h2{
-		font-family: 'Patua One', cursive;
-		font-weight: 600;
-		font-size: 30px;
-		margin-bottom: 20px;
+		margin-top: 100px;
 	}
+
 /* Arbeitn Neu*/
 .arbeiten{
 	height: 30vh;
@@ -398,51 +393,98 @@
 	transform: scale(1);
 	padding: 2 px 30px;
 }
-.arbeiten-button a{
+.arbeiten a{
 	text-align: center;
 	text-decoration: none;
 	color: #001e66;
 }
 /* Arbeiten */
-.work{
-	width: 100%;
-	height: 300px;
+.work-body{
+	background-color: #001e66;
 }
 .work{
-	padding-bottom:150px;
 	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.wrapper{
+	padding-top: 20px;
+	max-width: 800px;
+	margin: auto;
 }
 
 .fragment{
-	margin-top: 3%;
-}
-
-.work .fragment{
-	height: 290px;
-	width: 290px;
-	float: left;
-	margin-left: 2.5%;
-	position: relative;
+	width: 100%;
+	padding-top: 100%;
 	background-size: cover;
+}
+.work-container{
+	background: white;
+	width: 30%;
+	float: left;
+	margin: 1.5%;
+	transition: 0.2s;
+}
+
+.work-container:hover{
+	width: 30%;
+	margin: 1.5%;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.work-text{
+	margin: 20px;
+	color: #001e66;
+}
+
+.work-detail{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 97%;
+}
+
+.work-detail .fragment{
+	height: 80vh;
+	width: 90vw;
+	padding: 0;
+	margin: 20px auto ;
+	background-size: contain;
 	background-repeat: no-repeat;
-	min-width: 300px;
+	background-position: center;
 }
-.fragment h2{
+.work-detail .work-text{
+	width: 90vw;
+	margin: auto;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+}
+.work-detail:hover{
+	transform: scale(1);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 97%;
+	cursor: default;
+}
+
+.work-container .work-close{
+	display: none;
+}
+
+.work-detail .work-close{
+	display: block;
 	position: absolute;
-	bottom: 0px;
-	left: 30px;
-	transform: translateY(30px);
-}
-.fragment:nth-child(1) {
-    display: flex;
-}
-
-.fragment:nth-child(2) {
-    display: flex;
-}
-
-.fragment:nth-child(3) {
-    display: flex;
+	top: 10px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background-image: url('/img/ui/less.svg');
 }
 .content{
 	opacity: 0.5;
@@ -485,59 +527,86 @@
 }
 
 
-/* Work Detail */
-.work3{
-	background: red;
-	background-size: cover;
-}
-.work2{
-	position: absolute;
-	background: red;
-	background-size: cover;
-}
-
-.work2 .fragment2{
-	height: 400px;
-	width: 30%;
-	margin: 1%;
-	position: relative;
-	float: right;
-}
-.fragment2 .img-container2{
-	height: 400px;
-	overflow: hidden;
-}
-.img-container2 img{
-	height: 100%;
-	transform: translateX(-50%);
-	margin-left: 50%;
-}
-.fragment2 h2{
-	position: absolute;
-	bottom: 0px;
-	left: 30px;
-}
 /* Footer*/
 	.footer{
-		height: 20vh;
-		background: #001e66;
+		height: 50vh;
+		background: #000f3f;
+		position: relative;
 	}
 	.footer-container{
-		margin-top: 2%;
-		float: right;
-		margin-right: 10%;
+		position: absolute;
+		bottom: 0px;
+		float: left;
+		margin-left: 10%;
+		margin-bottom: 50px;
 	}
 	.footer-desc{
-		color: #4af2d6;
-		margin-left:0;
-		font-size: 25px;
+		color: white;
+		margin-left:20px;
+		font-size: 15px;
 	}
 	.footer-img{
-	width: 35px;
-	height: 35px;
-	transform: translateY(5px) translateX(4px);
+	width: 55px;
+	height: 55px;
+	transform: translateY(3px) translateX(-5px);
 	transition: 0.3s;
 	}
+	.danke-container{
+	position: absolute;
+	color: white;
+	margin: auto;
+	font-size: 40px;
+	font-family: 'Patua One', cursive;
+	font-weight: 600;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 40%;
+	}
+	.danke-container .danke{
+		float: left;
+		overflow: hidden;
+		height: 40px;
+		transform: translateY(-8px);
+	}
+	.danke-container .danke p{
+		transform: translateY(-7px);
+		line-height: normal;
+		animation: danke 5s infinite;
+		text-align: center;
+	}
+	.danke-container .danke p::selection{
+		background: none;
+	}
+	@keyframes danke {
+		0%{
+			transform: translateY(-7px);
+		}
+		20%{
+			transform: translateY(-56px);
+		}
+		25%{
+			transform: translateY(-56px);
+		}
+		45%{
+			transform: translateY(-105px);
+		}
+		50%{
+			transform: translateY(-105px);
+		}
+		70%{
+			transform: translateY(-154px);
+		}
+		75%{
+			transform: translateY(-154px);
+		}
+		95%{
+			transform: translateY(-203px);
+		}
+		100%{
+			transform: translateY(-203px);
+		}
+	}
+
 
 /* Mobile */
 

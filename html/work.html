@@ -15,22 +15,29 @@
     <script src="../js/animation.js"></script>
     <script src="../js/detail.js"></script>
     <script src="../js/posts.js"></script>
+    <script src="../js/work.js"></script>
     <title>IMD Arbeiten</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="../style.css" />
 </head>
 
-<body class="work3" style="background:white">
+<body class="work-body">
 
 <!-- Arbeiten-->
 <section class="work">
   <div class="wrapper" id="wrapper">
     {% for work in site.work %}
+
+    <div class="work-container" id="work-container">
+      <a href="#" onclick="window.location.reload(true);">
+      <div class="work-close"></div>
+      </a>
       <div id="fragment" class="fragment" style="background-image:url('{{ work.image_path }}')">
-        <h2 class="shularbeitentext">
-          {{ work.title }}
-        </h2>
       </div>
+      <h2 class="work-text">
+        {{ work.title }}
+      </h2>
+    </div>
     {% endfor %}
   </div>
 </section>
