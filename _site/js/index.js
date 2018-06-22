@@ -69,7 +69,7 @@ function handleOrientation(event) {
 	    $("#titletext2").css("color", "#370edb");
 	}
 	else{
-        $("#titletext2").css("color","#4af2d6");
+        $("#titletext2").css("color","#ff5f84");
 	}
 }
 }
