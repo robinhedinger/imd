@@ -11,12 +11,13 @@
   <script src="js/animation.js"></script>
   <script src="js/detail.js"></script>
   <script src="js/posts.js"></script>
+  <script src="js/play.js"></script>
   <title>IMD Bekanntmachung</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body onLoad="playvid()">
 
   <!--customize-->
   <section class="customize" id="customize">
@@ -78,7 +79,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
           <div class="more-text-box">
             <div>mehr</div>
           </div>
-        <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
+        <video id="video" onmouseover="play(this.id)" class="video" playsinline muted loop>
           <source src="img/skills/illustration.mp4" type="video/mp4" />
         </video>
       </div>
