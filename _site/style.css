@@ -665,7 +665,7 @@
 		.detail{
 			cursor: default !important;
 		}
-		.part video{
+		.part video, .part img{
 			width: 100%;
 			transform:translateY(0%);
 			position: absolute;
@@ -744,7 +744,7 @@
 				transition: 0.5s;
 				box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
 			}
-			.part video{
+			.part video, .part img{
 				width: auto;
 				height: 100%;
 				transform:translateY(-50%);
