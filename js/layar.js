@@ -1,9 +1,11 @@
 var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 function layar(){
   if (ios) {
-    alert("iOS")
+    console.log("iOS"),
+    window.location.replace("http://weareimd.ch/layar-page");
   }
   else{
-    alert("not iOS, probably Android or Desktop")
+    console.log("Not iOSss");
+    window.location.replace("http://weareimd.ch");
   }
 }

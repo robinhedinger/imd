@@ -6,5 +6,4 @@ function detail(part){
 
   var x = document.getElementById(part).querySelectorAll(".video");
   x[0].loop = true;
-  console.log("hallo");
 }
