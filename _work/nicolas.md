@@ -1,6 +1,7 @@
 ---
-title: Nico
-lehrjahr: 2
-image_path: https://cdn.dribbble.com/users/1432826/screenshots/4284201/1-01.png
+title: Maja
+lehrjahr: 1
+image_path: /uploads/heart-gone-white.jpg
 ---
+
 hey I'm the nico text.
