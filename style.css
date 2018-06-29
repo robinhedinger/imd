@@ -676,7 +676,7 @@
 		.part img{
 			height: auto;
 			top: auto;
-			bottom: 0px;
+			bottom: -70px;
 		}
 		.part h2{
 			transform: translateY(0px) !important;
@@ -750,7 +750,8 @@
 				box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
 			}
 			.part video{
-				width: 100%;
+				width: auto;
+				height: 100%;
 				transform:translateY(-50%);
 				position: absolute;
 				right: 0%;

@@ -10,12 +10,13 @@
   <script src="js/scroll.js"></script>
   <script src="js/detail.js"></script>
   <script src="js/posts.js"></script>
+  <script src="js/mobile.js"></script>
   <title>IMD Bekanntmachung</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body onload="mobile()">
 
   <!--customize-->
   <section class="customize" id="customize">
@@ -77,9 +78,10 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
           <div class="more-text-box">
             <div>mehr</div>
           </div>
-        <video onmouseover="play(this.id)" class="video" playsinline muted loop>
+        <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
           <source src="img/skills/illustration.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/giphy.gif">
       </div>
 
       <!--Kompetenz 2-->
@@ -98,6 +100,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
           <source src="img/skills/interaktion.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/giphy.gif">
       </div>
 
       <!--Kompetenz 3-->
@@ -116,6 +119,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
           <source src="img/skills/film.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/giphy.gif">
       </div>
 
       <!--Kompetenz 4-->
@@ -134,6 +138,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay muted loop>
           <source src="img/skills/animation.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/giphy.gif">
       </div>
 
       <!--Kompetenz 5-->
@@ -152,6 +157,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
           <source src="img/skills/foto.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/giphy.gif">
       </div>
 
       <!--Kompetenz 6-->
@@ -170,6 +176,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
           <source src="img/skills/konzept.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/giphy.gif">
       </div>
     </div>
   </section>
@@ -404,6 +411,5 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
     
 
 -->
-  <script src="js/animation.js"></script>
 </body>
 </html>
