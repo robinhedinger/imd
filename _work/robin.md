@@ -1,9 +1,7 @@
 ---
-title: Yannis
-lehrjahr: 2
-image_path: /uploads/bildschirmfoto-2018-06-29-um-17-14-45.png
+title: Zoé
+lehrjahr: 1
+image_path: /uploads/protectthearctic.jpg
 ---
 
-hey I'm the robin text.
-<!-- build:scripto -->
-
+hey I'm the robin text.<!-- build:scripto -->
