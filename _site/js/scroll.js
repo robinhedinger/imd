@@ -9,7 +9,6 @@ $(window).scroll(function (event) {
 	var position = p.position();
 	var scroll_done = (position.top - scroll) / 2 ;
 
-	console.log(scroll_done);
 
 
 	$('.begrüssung-textbox').css("transform", "translateY("+scroll_done+"px"+")");
@@ -25,7 +24,6 @@ $(window).scroll(function (event) {
   	var position = p.position();
   	var scroll_done = (position.top - scroll) / 2 ;
 
-  	console.log(scroll_done);
 
     $('#detail1 h2').css("transform", "translateY("+scroll_done+"px"+")");
   });
@@ -40,7 +38,6 @@ $(window).scroll(function (event) {
       var position = p.position();
       var scroll_done = (position.top - scroll) / 2 ;
 
-      console.log(scroll_done);
 
       $('#detail2 h2').css("transform", "translateY("+scroll_done+"px"+")");
     });
@@ -55,7 +52,6 @@ $(window).scroll(function (event) {
         var position = p.position();
         var scroll_done = (position.top - scroll) / 2 ;
 
-        console.log(scroll_done);
 
         $('#detail3 h2').css("transform", "translateY("+scroll_done+"px"+")");
       });
@@ -70,7 +66,6 @@ $(window).scroll(function (event) {
           var position = p.position();
           var scroll_done = (position.top - scroll) / 2 ;
 
-          console.log(scroll_done);
 
           $('#detail4 h2').css("transform", "translateY("+scroll_done+"px"+")");
         });
@@ -85,7 +80,6 @@ $(window).scroll(function (event) {
             var position = p.position();
             var scroll_done = (position.top - scroll) / 2 ;
 
-            console.log(scroll_done);
 
             $('#detail5 h2').css("transform", "translateY("+scroll_done+"px"+")");
           });
@@ -100,7 +94,6 @@ $(window).scroll(function (event) {
               var position = p.position();
               var scroll_done = (position.top - scroll) / 2 ;
 
-              console.log(scroll_done);
 
               $('#detail6 h2').css("transform", "translateY("+scroll_done+"px"+")");
             });

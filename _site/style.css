@@ -244,7 +244,7 @@
 		transition: 0.5s;
 		box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
 	}
-	.part video{
+	.part video, .part img{
 		width: auto;
 		height: 100%;
 		transform:translateY(-50%);
@@ -665,13 +665,18 @@
 		.detail{
 			cursor: default !important;
 		}
-		.part video{
+		.part video, .part img{
 			width: 100%;
 			transform:translateY(0%);
 			position: absolute;
 			right: 0%;
 			top:25%;
 			z-index: 0;
+		}
+		.part img{
+			height: auto;
+			top: auto;
+			bottom: -70px;
 		}
 		.part h2{
 			transform: translateY(0px) !important;
@@ -752,7 +757,16 @@
 				right: 0%;
 				top:50%;
 				z-index: 0;
-			}
+				}
+				.part img{
+					height: 100%;
+					width: auto;
+					transform:translateY(-50%);
+					position: absolute;
+					right: 0%;
+					top:50%;
+					z-index: 0;
+				}
 			.part:hover{
 				cursor: pointer;
 				box-shadow: 0px 30px 40px rgba(0,0,0,0.2);

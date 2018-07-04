@@ -1,6 +1,7 @@
 ---
-title: Robin
+title: Zoé
 lehrjahr: 1
-image_path: https://cdn.dribbble.com/users/1432826/screenshots/4303595/8-01.png
+image_path: /uploads/protectthearctic.jpg
 ---
-hey I'm the robin text.
+
+hey I'm the robin text.<!-- build:scripto -->

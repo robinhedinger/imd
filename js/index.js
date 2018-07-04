@@ -58,12 +58,10 @@ function handleOrientation(event) {
 	}
     //convert back to degrees
     var spin = spinR * 180 / Math.PI;
-	console.log(spin);
 	$('#title').css("transform", "translateX("+gammaF+"px"+")"+"translateY("+betaF+"px"+")");
 
 	if(Math.round(gammaF)>= -1 && Math.round(gammaF)<= 1 && Math.round(betaF)>=-1 && Math.round(betaF)<=1){
 		var thingmobile = thingsmobile[Math.floor(Math.random()*thingsmobile.length)];
-		console.log(thingmobile);
     	document.getElementById("titletext").innerHTML = thingmobile;
 		document.getElementById("titletext2").innerHTML = thingmobile;
 	    $("#titletext2").css("color", "#370edb");
@@ -82,7 +80,6 @@ $("#title").mousemove(function(e){
 
 	if (e.pageX < ($(window).width() / 1.8) && e.pageX > ($(window).width() / 2.2) && e.pageY < ($(window).height() / 1.6) && e.pageY > ($(window).height() / 2.4)) {
 		var thing = things[Math.floor(Math.random()*things.length)];
-		console.log(thing);
     	document.getElementById("titletext").innerHTML = thing;
 		document.getElementById("titletext2").innerHTML = thing;
         $("#titletext2").css("opacity", "0");

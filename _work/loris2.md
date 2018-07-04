@@ -1,5 +1,6 @@
 ---
-title: Michelle
-lehrjahr: 2
-image_path: 'https://cdn.dribbble.com/users/1432826/screenshots/4284201/1-01.png'
+title: Brian
+lehrjahr: 1
+image_path: /uploads/brian-1.png
 ---
+

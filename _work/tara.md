@@ -1,7 +1,7 @@
 ---
-title: Tara
-lehrjahr: 1
-image_path: 'https://cdn.dribbble.com/users/1432826/screenshots/4315807/4-01.png'
+title: Larissa
+lehrjahr: 2
+image_path: /uploads/siebdruck-imd2-a-1.jpg
 ---
 
 Hey das habe ich neues gemacht.

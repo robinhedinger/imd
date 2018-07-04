@@ -8,15 +8,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/scroll.js"></script>
-  <script src="js/animation.js"></script>
   <script src="js/detail.js"></script>
   <script src="js/posts.js"></script>
+  <script src="js/mobile.js"></script>
   <title>IMD Bekanntmachung</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body onload="mobile()">
 
   <!--customize-->
   <section class="customize" id="customize">
@@ -81,6 +81,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
           <source src="img/skills/illustration.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/gif/illustration.gif">
       </div>
 
       <!--Kompetenz 2-->
@@ -99,6 +100,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
           <source src="img/skills/interaktion.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/gif/interaktion.gif">
       </div>
 
       <!--Kompetenz 3-->
@@ -117,6 +119,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
           <source src="img/skills/film.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/gif/film.gif">
       </div>
 
       <!--Kompetenz 4-->
@@ -135,6 +138,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay muted loop>
           <source src="img/skills/animation.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/gif/animation.gif">
       </div>
 
       <!--Kompetenz 5-->
@@ -153,6 +157,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
           <source src="img/skills/foto.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/gif/foto.gif">
       </div>
 
       <!--Kompetenz 6-->
@@ -171,6 +176,7 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
         <video onmouseover="play(this.id)" class="video" autoplay playsinline muted loop>
           <source src="img/skills/konzept.mp4" type="video/mp4" />
         </video>
+        <img class="gif" src="./img/skills/gif/konzept.gif">
       </div>
     </div>
   </section>
@@ -197,15 +203,15 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
   <section class="work">
     <div class="wrapper" id="wrapper">
       
-        <div id="fragment" class="fragment" style="background-image:url('https://cdn.dribbble.com/users/1432826/screenshots/4284201/1-01.png')">
+        <div id="fragment" class="fragment" style="background-image:url('/uploads/illustration-hochhinaus-finalisiert.png')">
           <h2>
-            Michelle
+            Gino
           </h2>
         </div>
       
-        <div id="fragment" class="fragment" style="background-image:url('https://cdn.dribbble.com/users/1432826/screenshots/4284201/1-01.png')">
+        <div id="fragment" class="fragment" style="background-image:url('/uploads/brian.png')">
           <h2>
-            Michelle
+            Brian
           </h2>
         </div>
       
@@ -265,11 +271,11 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
           font-family: 'Patua One', cursive;
           font-size: 30px;
           ">
-          Michelle
+          Gino
         </h2>
         <img style="
           width: 100%;
-          " src="https://cdn.dribbble.com/users/1432826/screenshots/4284201/1-01.png" alt="Michelle" />
+          " src="/uploads/illustration-hochhinaus-finalisiert.png" alt="Gino" />
         <div style="
         color: #001e66;
         padding: 15px 0 0 15px;
@@ -296,11 +302,11 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
           font-family: 'Patua One', cursive;
           font-size: 30px;
           ">
-          Michelle
+          Brian
         </h2>
         <img style="
           width: 100%;
-          " src="https://cdn.dribbble.com/users/1432826/screenshots/4284201/1-01.png" alt="Michelle" />
+          " src="/uploads/brian.png" alt="Brian" />
         <div style="
         color: #001e66;
         padding: 15px 0 0 15px;
@@ -405,6 +411,5 @@ Technik-Know-how erschaffst du massgeschneiderte multimediale Erlebniswelten.
     
 
 -->
-  <script src="js/animation.js"></script>
 </body>
 </html>
