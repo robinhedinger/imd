@@ -1,6 +1,6 @@
 ---
 title: Maja
-lehrjahr: 1
+lehrjahr: 2
 image_path: /uploads/bildschirmfoto-2018-06-29-um-17-08-32.png
 ---
 
