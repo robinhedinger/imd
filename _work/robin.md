@@ -1,6 +1,6 @@
 ---
 title: Zoé
-lehrjahr: 1
+lehrjahr: 2
 image_path: /uploads/protectthearctic.jpg
 ---
 
