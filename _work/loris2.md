@@ -1,6 +1,6 @@
 ---
 title: Brian
-lehrjahr: 1
+lehrjahr: 2
 image_path: /uploads/brian-1.png
 ---
 
