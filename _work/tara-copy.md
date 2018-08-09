@@ -1,6 +1,6 @@
 ---
 title: Michelle
-lehrjahr: 2
+lehrjahr: 3
 image_path: /uploads/animation.gif
 ---
 
